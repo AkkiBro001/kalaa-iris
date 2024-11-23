@@ -48,9 +48,8 @@ export function HeroBanner() {
                 </picture>
 
                 <div className="w-100% top-0 lg:w-[45%] xs:w-[50%] h-full absolute flex flex-col xs:justify-center right-0 p-4 bg-black-100 text-center">
-                  {/* <img src={banner.eyeIcon} alt="eye-icon" className="w-full xs:h-full h-auto object-contain opacity-[0.03] absolute"/> */}
-                 
-                    <h1 className="lg:text-5xl md:text-4xl text-3xl my-6 font-bold text-primaryColor pl-4 tracking-wider">
+                  
+                 <h1 className="lg:text-5xl md:text-4xl text-3xl my-6 font-bold text-primaryColor pl-4 tracking-wider">
                       {banner.title}
                     </h1>
                     <p className="text-sm text-slate-200 md:text-base leading-relaxed">
