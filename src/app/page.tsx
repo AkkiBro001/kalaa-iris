@@ -1,9 +1,11 @@
 import { HeroBanner } from "@/components/herobanner/heroBanner";
+import Tagline from "@/components/tagline/tagline";
 
 export default function Home() {
   return (
-    <div>
+    <section>
       <HeroBanner />
-    </div>
+      <Tagline />
+    </section>
   );
 }
