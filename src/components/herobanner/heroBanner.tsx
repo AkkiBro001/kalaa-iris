@@ -4,6 +4,7 @@ import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel"
 import { heroBanner } from "./heroBannerData";
+import Image from "next/image";
 
 
 
@@ -25,7 +26,7 @@ export function HeroBanner() {
         {heroBanner.map((banner, index) => (
           <CarouselItem key={index}>
             <div>
-                <img src={banner.bgImg} alt={banner.id} />
+                <Image src={banner.bgImg} alt={banner.id} width={1440} height={810} className="w-full h-auto max-h-[90dvh] object-cover"/>
             </div>
           </CarouselItem>
         ))}
