@@ -5,7 +5,7 @@ import React from 'react'
 
 function MobileNav() {
   return (
-    <ul className='gap-4 flex justify-around md:hidden sticky bottom-4 p-3 backdrop-blur-md border rounded-xl w-[95%] mx-auto border-secondaryColor mt-auto'>
+    <ul className='gap-4 flex justify-around md:hidden sticky bottom-4 p-3 backdrop-blur-md rounded-xl w-[95%] mx-auto  mt-auto shadow-md border border-white/20'>
         {
             navigation_links.map(link => (
                 <li key={link.id} className='flex flex-col items-center gap-2 text-xs'>
