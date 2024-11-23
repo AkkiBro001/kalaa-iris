@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {poppins} from "./fonts/fonts"
 import "./globals.css";
 import Navigation from "@/components/navigation/navigation";
+import MobileNav from "@/components/mobileNav/MobileNav";
 
 export const metadata: Metadata = {
   title: "Kalaa Iris",
@@ -20,9 +21,10 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased bg-black text-white`}
       >
-        <main className="w-full max-w-[1980px] mx-auto border-x border-secondaryColor min-h-[200vh] relative">
+        <main className="w-full max-w-[1980px] mx-auto border-x border-secondaryColor min-h-[100vh] relative flex flex-col">
           <Navigation />
           {children}
+          <MobileNav /> 
        </main>
       </body>
     </html>

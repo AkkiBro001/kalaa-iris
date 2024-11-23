@@ -4,7 +4,7 @@ import {navigation_links} from "../../lib/links"
 
 function MenuLinks() {
   return (
-    <ul className='flex gap-8'>
+    <ul className='gap-8 hidden md:flex'>
         {
             navigation_links.map(link => (
                 <li key={link.id} className='flex gap-2'>

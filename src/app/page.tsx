@@ -1,8 +1,9 @@
+import { HeroBanner } from "@/components/herobanner/heroBanner";
 
 export default function Home() {
   return (
     <div>
-      <h1>sdsds</h1>
+      <HeroBanner />
     </div>
   );
 }
