@@ -3,6 +3,7 @@ import ChoosePrint from "./choosePrint"
 import ProcessCard from "./processCard"
 import { processData } from "./processData"
 import VisitUs from "./visitUs"
+import ChooseEffects from "./chooseEffects"
 
 function Process() {
   return (
@@ -15,6 +16,7 @@ function Process() {
         
       </section>
       <VisitUs />
+      <ChooseEffects />
       <ChoosePrint />
     </div>
   )

@@ -66,5 +66,29 @@ export const printData = [
     }
 ]
 
+export const chooseEffectsData = [
+    {
+        id: 1,
+        img: "/effects-thumbnails/galaxy-effect.jpg",
+        title: "Single Galaxy Effects",
+        link: "#"
+    },
+
+    {
+        id: 2,
+        img: "/effects-thumbnails/nature-effect.jpg",
+        title: "Single Natrue Effects",
+        link: "#"
+    },
+
+    {
+        id: 3,
+        img: "/effects-thumbnails/fire-effect.jpg",
+        title: "Single Fire Effects",
+        link: "#"
+    }
+]
+
 export type ProcessDataType = typeof processData[0]
 export type PrintDataType = typeof printData[0]
+export type ChooseEffectDataType = typeof chooseEffectsData[0]

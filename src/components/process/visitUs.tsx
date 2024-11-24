@@ -14,10 +14,10 @@ export default function VisitUs() {
         <Image width={400} height={400} alt="pic" src="/visit-us/visit-us-3.webp" className="image-rb-border-frame basis-1/4"/>
       </section>
 
-      <div className="flex flex-col">
-        <h3 className="text-xl xs:text-2xl text-center my-4">Come by our location!</h3>
-        <div className="flex flex-col xs:flex-row items-center text-sm xs:text-base gap-3">
-            <span className="flex gap-2 items-center text-primaryColor">
+      <div className="flex flex-col text-center">
+        <h3 className="text-xl xs:text-2xl my-4">Come by our location!</h3>
+        <div className="flex flex-col xs:flex-row items-center text-base gap-3 text-primaryColor">
+            <span className="flex gap-2 items-center">
                 <FaLocationDot />
                 <span>Address:</span>
             </span>
