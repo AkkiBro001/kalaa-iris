@@ -47,15 +47,15 @@ export function HeroBanner() {
                   />
                 </picture>
 
-                <div className="w-100% top-0 lg:w-[45%] xs:w-[50%] h-full absolute flex flex-col xs:justify-center right-0 p-4 bg-black-100 text-center">
+                <div className="w-100% top-0 lg:w-[45%] xs:w-[50%] h-full absolute flex flex-col justify-end pb-[60px] xs:justify-center right-0 p-4 bg-black-100 text-center">
                   
-                 <h1 className="lg:text-5xl md:text-4xl text-3xl my-6 font-bold text-primaryColor pl-4 tracking-wider">
+                 <h1 className="lg:text-5xl md:text-4xl text-3xl my-4 font-bold text-primaryColor pl-4 tracking-wider">
                       {banner.title}
                     </h1>
                     <p className="text-sm text-slate-200 md:text-base leading-relaxed">
                       {banner.desc}
                     </p>
-                    <Button className="mt-5 xs:mt-10 self-center max-w-[250px] w-full uppercase font-bold  tracking-wider">Explore More</Button>
+                    <Button size="sm" className="mt-5 xs:mt-10 self-center max-w-[250px] w-full uppercase font-bold  tracking-wider">Explore More</Button>
                  
                 </div>
               </div>
