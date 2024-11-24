@@ -7,7 +7,7 @@ export default function Home() {
     <section>
       <HeroBanner />
       <Tagline />
-      <section className="px-4">
+      <section className="px-2">
 
       <Process />
       </section>
