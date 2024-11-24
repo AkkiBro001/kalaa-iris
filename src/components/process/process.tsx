@@ -1,6 +1,8 @@
 import Title from "../title/title"
+import ChoosePrint from "./choosePrint"
 import ProcessCard from "./processCard"
 import { processData } from "./processData"
+import VisitUs from "./visitUs"
 
 function Process() {
   return (
@@ -12,6 +14,8 @@ function Process() {
         }
         
       </section>
+      <VisitUs />
+      <ChoosePrint />
     </div>
   )
 }

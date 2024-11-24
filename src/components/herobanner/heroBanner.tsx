@@ -40,7 +40,7 @@ export function HeroBanner() {
                     src={banner.mobileBG}
                     alt="Multiple images for different conditions"
                     style={{
-                      height: "calc(100dvh - 120px)",
+                      height: "calc(100vh - 120px)",
                       width: "100%",
                     }}
                     className=" object-cover"

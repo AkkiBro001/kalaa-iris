@@ -1,6 +1,8 @@
 import { FaCameraRetro } from "react-icons/fa";
 import { GrSelect } from "react-icons/gr";
 import { IoIosImages } from "react-icons/io";
+import { IoPrint } from "react-icons/io5";
+import { FaFileImage } from "react-icons/fa6";
 
 export const processData = [
     {
@@ -26,4 +28,43 @@ export const processData = [
     }
 ]
 
+export const printData = [
+    {
+        id: 1,
+        img: "/print/print-1.webp",
+        details: [
+            {
+                icon: IoPrint,
+                label: "Type: ",
+                value: "CANVAS"
+            },
+            {
+                icon: FaFileImage,
+                label: "Size: ",
+                value: "A3"
+            }
+        ],
+
+    },
+
+    {
+        id: 2,
+        img: "/print/print-2.webp",
+        details: [
+            {
+                icon: IoPrint,
+                label: "Type: ",
+                value: "PAPER"
+            },
+            {
+                icon: FaFileImage,
+                label: "Size: ",
+                value: "A5"
+            }
+        ],
+
+    }
+]
+
 export type ProcessDataType = typeof processData[0]
+export type PrintDataType = typeof printData[0]
