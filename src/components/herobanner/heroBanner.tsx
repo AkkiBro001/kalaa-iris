@@ -47,7 +47,7 @@ export function HeroBanner() {
                   />
                 </picture>
 
-                <div className="w-100% top-0 lg:w-[45%] xs:w-[50%] h-full absolute flex flex-col justify-end pb-[60px] xs:justify-center right-0 p-4 bg-black-100 text-center">
+                <div className="w-100% top-0 lg:w-[45%] xs:w-[50%] h-full absolute flex flex-col justify-end pb-[100px] xs:justify-center right-0 p-4 bg-black-100 text-center">
                   
                  <h1 className="lg:text-5xl md:text-4xl text-3xl my-4 font-bold text-primaryColor pl-4 tracking-wider">
                       {banner.title}
