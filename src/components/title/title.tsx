@@ -11,7 +11,7 @@ type TitleProps = {
 
 export default function Title({title, children, className, icon: Icon}: TitleProps) {
   return (
-    <div className={cn("flex flex-col md:flex-row mt-8 mb-12 py-6 rounded-lg mx-auto text-primaryColor items-center gap-6 w-fit", className)}>
+    <div className={cn("flex flex-col md:flex-row mt-8 mb-10 py-6 rounded-lg mx-auto text-primaryColor items-center gap-6 w-fit", className)}>
       
       <span className="border-2 border-primaryColor p-2 rounded-lg">
         <Icon className="md:text-4xl text-3xl"/>
