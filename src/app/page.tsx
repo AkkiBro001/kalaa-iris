@@ -1,4 +1,5 @@
 import { HeroBanner } from "@/components/herobanner/heroBanner";
+import Process from "@/components/process/process";
 import Tagline from "@/components/tagline/tagline";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <section>
       <HeroBanner />
       <Tagline />
+      <Process />
     </section>
   );
 }

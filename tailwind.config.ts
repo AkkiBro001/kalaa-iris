@@ -13,8 +13,9 @@ export default {
 			xs: "576px"
 		},
   		colors: {
-			secondaryColor: '#27272a',
+			secondaryColor: '#181818',
 			primaryColor: "#ffaa00",
+			hairlineColor: "rgba(255,255,255,0.2)",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
