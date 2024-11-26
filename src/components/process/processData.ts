@@ -2,7 +2,7 @@ import { FaCameraRetro } from "react-icons/fa";
 import { GrSelect } from "react-icons/gr";
 import { IoIosImages } from "react-icons/io";
 import { IoPrint } from "react-icons/io5";
-import { FaFileImage } from "react-icons/fa6";
+// import { FaFileImage } from "react-icons/fa6";
 
 export const processData = [
     {
