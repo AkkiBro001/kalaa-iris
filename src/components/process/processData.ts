@@ -35,14 +35,10 @@ export const printData = [
         details: [
             {
                 icon: IoPrint,
-                label: "Type: ",
+                label: "Material Type: ",
                 value: "CANVAS"
             },
-            {
-                icon: FaFileImage,
-                label: "Size: ",
-                value: "A3"
-            }
+            
         ],
 
     },
@@ -53,13 +49,21 @@ export const printData = [
         details: [
             {
                 icon: IoPrint,
-                label: "Type: ",
+                label: "Material Type: ",
                 value: "PAPER"
-            },
+            }
+        ],
+
+    },
+
+    {
+        id: 3,
+        img: "/print/print-1.webp",
+        details: [
             {
-                icon: FaFileImage,
-                label: "Size: ",
-                value: "A5"
+                icon: IoPrint,
+                label: "Material Type: ",
+                value: "ACRALIC"
             }
         ],
 
