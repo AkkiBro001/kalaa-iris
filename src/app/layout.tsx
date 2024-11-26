@@ -14,7 +14,6 @@ export const metadata: Metadata = {
     title: "Kalaa Iris",
     description: "WE CREATE ‘EYE’ CONIC ART",
     url: "https://kalaa-iris.vercel.app/",
-  
   },
 };
 
