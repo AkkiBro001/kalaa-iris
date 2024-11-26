@@ -14,27 +14,7 @@ export const metadata: Metadata = {
     title: "Kalaa Iris",
     description: "WE CREATE ‘EYE’ CONIC ART",
     url: "https://kalaa-iris.vercel.app/",
-    icons: {
-      icon: "/kalaa-icon.png", // Path to the favicon in the public directory
-    
-    },
-
-    images: [
-      {
-        url: "/kalaa-icon.png",
-        // width: 1200,
-        // height: 630,
-        alt: 'Kalaa Iris',
-      },
-    ],
-
-    twitter: {
-      card: `/kalaa-icon.png`,
-      title: 'Kalaa Iris',
-      images: [
-        `/kalaa-icon.png`,
-      ],
-    },
+  
   },
 };
 
