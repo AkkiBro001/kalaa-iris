@@ -1,7 +1,8 @@
+
 import { FaCameraRetro } from "react-icons/fa";
 import { GrSelect } from "react-icons/gr";
 import { IoIosImages } from "react-icons/io";
-import { IoPrint } from "react-icons/io5";
+
 // import { FaFileImage } from "react-icons/fa6";
 
 export const processData = [
@@ -34,7 +35,7 @@ export const printData = [
         img: "/print/print-1.webp",
         details: [
             {
-                icon: IoPrint,
+                
                 label: "Material Type: ",
                 value: "CANVAS"
             },
@@ -48,7 +49,7 @@ export const printData = [
         img: "/print/print-2.webp",
         details: [
             {
-                icon: IoPrint,
+                
                 label: "Material Type: ",
                 value: "PAPER"
             }
@@ -61,12 +62,35 @@ export const printData = [
         img: "/print/print-1.webp",
         details: [
             {
-                icon: IoPrint,
+               
                 label: "Material Type: ",
                 value: "ACRALIC"
             }
         ],
 
+    }
+]
+
+export const printSize = [
+    {
+        id: '1',
+        type: "A5",
+        size: ["8.3 x 5.3 in", "210 x 148 mm"],
+        images: "/print/A5.jpg",
+    },
+
+    {
+        id: '2',
+        type: "A4",
+        size: ["11.69 x 8.27 in", "297 x 210 mm"],
+        images: "/print/A4.jpg",
+    },
+
+    {
+        id: '3',
+        type: "A3",
+        size: ["16.5 x 11.7 in", "420 x 297 mm"],
+        images: "/print/A3.jpg",
     }
 ]
 
@@ -96,3 +120,4 @@ export const chooseEffectsData = [
 export type ProcessDataType = typeof processData[0]
 export type PrintDataType = typeof printData[0]
 export type ChooseEffectDataType = typeof chooseEffectsData[0]
+export type PrintSizeDataType = typeof printSize[0]

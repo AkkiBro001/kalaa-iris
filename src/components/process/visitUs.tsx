@@ -13,9 +13,9 @@ export default function VisitUs() {
       <section className="flex flex-wrap gap-6 justify-center relative">
       {/* <Flashcard className="left-[10px] -top-[212px] -rotate-[15deg] hidden md:flex bg-green-900 border-green-950"/> */}
       
-        <Image width={400} height={400} alt="pic" src="/visit-us/visit-us-1.webp" className="image-rb-border-frame basis-1/4"/>
-        <Image width={400} height={400} alt="pic" src="/visit-us/visit-us-2.webp" className="image-rb-border-frame basis-1/4"/>
-        <Image width={400} height={400} alt="pic" src="/visit-us/visit-us-3.webp" className="image-rb-border-frame basis-1/4"/>
+        <Image width={400} height={400} alt="pic" src="/visit-us/visit-us-1.webp" className="image-rb-border-frame basis-1/4 w-auto h-auto"/>
+        <Image width={400} height={400} alt="pic" src="/visit-us/visit-us-2.webp" className="image-rb-border-frame basis-1/4 w-auto h-auto"/>
+        <Image width={400} height={400} alt="pic" src="/visit-us/visit-us-3.webp" className="image-rb-border-frame basis-1/4 w-auto h-auto"/>
       </section>
 
       <div className="flex flex-col text-center relative mt-8 ">
