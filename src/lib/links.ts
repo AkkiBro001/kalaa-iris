@@ -12,8 +12,8 @@ export const navigation_links = [
 
     {
         id: 2,
-        name: "Gallary",
-        link: "/gallary",
+        name: "Gallery",
+        link: "/gallery",
         icon: Images
     },
 
