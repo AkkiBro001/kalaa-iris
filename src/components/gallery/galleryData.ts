@@ -35,6 +35,12 @@ export const category_details = [
     },
 
     {
+        short_code: "space",
+        name: "Space",
+        img: "/gallery/icons/space.png"
+    },
+
+    {
         short_code: "couple",
         name: "Couple",
         img: "/gallery/icons/couple.png"
