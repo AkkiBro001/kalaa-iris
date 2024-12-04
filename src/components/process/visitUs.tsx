@@ -27,12 +27,14 @@ export default function VisitUs() {
                   <FaLocationDot />
                   <span>Address:</span>
               </span>
-              <p>Memorial City Mall, Houston, TX 77024</p>
+              <p>The Galleria Mall, Yelahanka, Bengaluru</p>
             </div>
-            <Button className="text-black bg-primaryColor">
-              <BiSolidNavigation />
-              <span>Get Direction</span>
-            </Button>
+            <a href="https://maps.app.goo.gl/5FNpQbod55PfFg6f6" target="_blank">
+              <Button className="text-black bg-primaryColor">
+                <BiSolidNavigation />
+                <span>Get Direction</span>
+              </Button>
+            </a>
         </div>
       </div>
 

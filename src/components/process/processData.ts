@@ -10,21 +10,21 @@ export const processData = [
         id: 1,
         icon: FaCameraRetro,
         title: "Step 01: Click",
-        desc: "We take your photo of your iris using specialized high resolution camera.",
+        desc: "Click a picture of your iris with our specialised high resolution camera",
         step: "01"
     },
     {
         id: 2,
         icon: GrSelect,
         title: "Step 02: Choose",
-        desc: "We carefully optimize the photo, keeping original colors and pattern.",
+        desc: "Choose an effect from our specially curated gallery while we optimise your picture",
         step: "02"
     },
     {
         id: 3,
         icon: IoIosImages,
         title: "Step 03: Collect",
-        desc: "We print your new art from a selection of size and quality materials",
+        desc: "Collect your unique artwork available for selection in different materials and sizes",
         step: "03"
     }
 ]
@@ -64,7 +64,7 @@ export const printData = [
             {
                
                 label: "Material Type: ",
-                value: "ACRALIC"
+                value: "ACRYLIC"
             }
         ],
 
