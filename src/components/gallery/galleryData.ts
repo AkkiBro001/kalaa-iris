@@ -45,7 +45,7 @@ export const category_details = [
             {
                 name: "Single Lava Effect",
                 short_code: "S_NAT_02",
-                img: `${img_base_url}nature/single-lava-Effect.jpg`
+                img: `${img_base_url}nature/single-lava-effect.jpg`
             },
             {
                 name: "Single Water Splash Effect",
