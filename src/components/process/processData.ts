@@ -114,6 +114,13 @@ export const chooseEffectsData = [
         img: "/effects-thumbnails/fire-effect.jpg",
         title: "Single Fire Effects",
         link: "#"
+    },
+
+    {
+        id: 4,
+        img: "/effects-thumbnails/couple-effect.jpg",
+        title: "Couple Effects",
+        link: "#"
     }
 ]
 
