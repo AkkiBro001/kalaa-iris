@@ -142,6 +142,7 @@ export const category_details = [
     // }
 ]
 
+
 export const all_effects_count = category_details.reduce((count, value) => {
     count += value.effects.length
     return count;
@@ -151,8 +152,14 @@ export const all_effects = category_details.map((value) => {
     return value.effects
 }).flat()
 
+export const category_menu = category_details.map(category => {
+    return {name: category.name, short_code: category.short_code, count: category.short_code === "all" ? all_effects_count : category.effects.length}
+})
+
+
 export const selected_gallery = (code: string) => {
     return category_details.find(category => category.short_code === code) 
 }
 
-export type CategoryDetailsProps = typeof category_details[0]
+export type CategoryDetailsProps = typeof category_details[0];
+export type CategoryMenuProps = typeof category_menu[0]

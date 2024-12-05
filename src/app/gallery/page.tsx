@@ -10,8 +10,8 @@ export default function Gallery() {
     <section className='min-h-screen'>
       <GalleryBanner />
       <Container className='p-4 min-h-screen flex flex-col justify-center'>
-        <GalleryHeader title="Category"/>
-        <section className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 pb-5 px-1 gap-5 lg:gap-8'>
+        <GalleryHeader title="Categories"/>
+        <section className='grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 pb-5 px-1 gap-5 lg:gap-8'>
           {
             category_details.map(category => <CategoryCard key={category.short_code} {...category}/>)
           }
