@@ -24,7 +24,7 @@ export default function GalleryCard({ name, short_code, img }: GalleryCardProps)
           whileHover={{ scale: 1.07, duration: 0.1, ease: "ease" }}
         >
           <div>
-            <Image width={1170} height={658} src={img} alt={name} />
+            <Image width={1170} height={658} src={img} alt={name}/>
           </div>
 
           <div className="p-3 flex flex-col gap-2 items-center">

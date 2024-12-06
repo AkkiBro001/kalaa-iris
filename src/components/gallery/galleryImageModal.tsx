@@ -18,13 +18,13 @@ export function GalleryImageModal({ name, short_code, img }: GalleryCardProps) {
     
       <DialogContent className="sm:max-w-[1000px] w-[95%]">
         <DialogHeader>
-          <DialogTitle>{name}</DialogTitle>
-          <DialogDescription>
-            {short_code}
+          <DialogTitle className="md:text-2xl text-primaryColor">{name}</DialogTitle>
+          <DialogDescription className="md:text-lg text-sm text-white">
+            Code: {short_code}
           </DialogDescription>
         </DialogHeader>
           <div>
-            <Image width={1440} height={810} src={img} alt={name} />
+            <Image width={1440} height={810} src={img} alt={name} className="rounded-md"/>
           </div>
       </DialogContent>
     
