@@ -7,12 +7,12 @@ export const static_links = [
         links: [
             {
                 linkName: "FAQs",
-                link: "#"
+                link: "/about-us#faqs"
             },
-            {
-                linkName: "Contact",
-                link: "#"
-            },
+            // {
+            //     linkName: "Contact",
+            //     link: "#"
+            // },
             {
                 linkName: "About Us",
                 link: "/about-us"
@@ -24,7 +24,7 @@ export const static_links = [
         name: "Information",
         links: [
             {
-                linkName: "Our Product",
+                linkName: "Our Products",
                 link: "/gallery"
             },
             {

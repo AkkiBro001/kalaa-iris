@@ -77,6 +77,7 @@ export const printSize = [
         type: "A5",
         size: ["8.3 x 5.3 in", "210 x 148 mm"],
         images: "/print/A5.jpg",
+        
     },
 
     {
@@ -84,6 +85,7 @@ export const printSize = [
         type: "A4",
         size: ["11.69 x 8.27 in", "297 x 210 mm"],
         images: "/print/A4.jpg",
+        
     },
 
     {
@@ -91,6 +93,7 @@ export const printSize = [
         type: "A3",
         size: ["16.5 x 11.7 in", "420 x 297 mm"],
         images: "/print/A3.jpg",
+        
     }
 ]
 
