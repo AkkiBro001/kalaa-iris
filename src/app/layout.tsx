@@ -4,6 +4,7 @@ import "./globals.css";
 import Navigation from "@/components/navigation/navigation";
 import MobileNav from "@/components/mobileNav/MobileNav";
 import FooterBar from "@/components/footer/footer";
+import StaticLinkFooter from "@/components/staticLinkFooter.tsx/staticLinkFooter";
 
 export const metadata: Metadata = {
   title: "Kalaa Iris",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <main className="w-full max-w-[1980px] mx-auto border-x border-hairlineColor min-h-[100vh] relative flex flex-col">
           <Navigation />
           {children}
+          <StaticLinkFooter />
           <FooterBar />
           <MobileNav /> 
        </main>

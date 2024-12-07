@@ -1,0 +1,90 @@
+import { FaYoutube } from "react-icons/fa";
+import { FaSquareFacebook, FaSquareInstagram } from "react-icons/fa6";
+
+export const static_links = [
+    {
+        name: "Quick Links",
+        links: [
+            {
+                linkName: "FAQs",
+                link: "#"
+            },
+            {
+                linkName: "Contact",
+                link: "#"
+            },
+            {
+                linkName: "About Us",
+                link: "/about-us"
+            }
+        ]
+    },
+
+    {
+        name: "Information",
+        links: [
+            {
+                linkName: "Our Product",
+                link: "/gallery"
+            },
+            {
+                linkName: "Terms and Conditions",
+                link: "#"
+            },
+            {
+                linkName: "Privacy Policy",
+                link: "#"
+            }
+        ]
+    },
+
+    {
+        name: "Connect",
+        links: [
+            {
+                linkName: "Get In Touch",
+                link: "#"
+            },
+            {
+                linkName: "Become a Franchise",
+                link: "#"
+            },
+            {
+                linkName: "Social",
+                link: "#",
+                social: [
+                    {
+                        id: 1,
+                        icon: FaSquareFacebook,
+                        title: "Facebook",
+                        link: "#"
+                    },
+                
+                    {
+                        id: 2,
+                        icon: FaSquareInstagram,
+                        title: "Instagram",
+                        link: "#"
+                    },
+                
+                    {
+                        id: 3,
+                        icon: FaYoutube,
+                        title: "Youtube",
+                        link: "#"
+                    },
+                
+                    
+                ]
+            }
+        ]
+    },
+]
+
+export const iris_images = [
+    "/iris/01.png",
+    "/iris/02.png",
+    "/iris/03.png",
+    "/iris/04.png",
+    "/iris/05.png",
+]
