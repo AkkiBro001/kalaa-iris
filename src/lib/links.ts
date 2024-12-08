@@ -26,8 +26,8 @@ export const navigation_links = [
 
     {
         id: 4,
-        name: "Francise",
-        link: "/francise",
+        name: "Franchise",
+        link: "/franchise",
         icon: Handshake
     },
   ]
