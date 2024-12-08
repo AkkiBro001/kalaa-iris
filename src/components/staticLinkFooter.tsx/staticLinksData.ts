@@ -33,7 +33,7 @@ export const static_links = [
             },
             {
                 linkName: "Privacy Policy",
-                link: "#"
+                link: "/privacy-policy"
             }
         ]
     },
