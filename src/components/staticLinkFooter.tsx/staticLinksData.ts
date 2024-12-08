@@ -29,7 +29,7 @@ export const static_links = [
             },
             {
                 linkName: "Terms and Conditions",
-                link: "#"
+                link: "/terms-and-conditions"
             },
             {
                 linkName: "Privacy Policy",
