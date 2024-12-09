@@ -10,7 +10,7 @@ export default function StaticLinkFooter() {
       <article className="flex flex-col md:flex-row max-w-[700px] w-full justify-between gap-4">
         {static_links.map((staticLink) => (
           <div key={staticLink.name}>
-            <h2 className="mb-4 md:mb-8">{staticLink.name}</h2>
+            <h2 className="mb-4 md:mb-6">{staticLink.name}</h2>
 
             <ul className="flex flex-col gap-2">
               {staticLink.links.map((link) => {

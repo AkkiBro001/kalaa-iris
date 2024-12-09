@@ -41,13 +41,13 @@ export const static_links = [
     {
         name: "Connect",
         links: [
-            {
-                linkName: "Get In Touch",
-                link: "#"
-            },
+            // {
+            //     linkName: "Get In Touch",
+            //     link: "#"
+            // },
             {
                 linkName: "Become a Franchise",
-                link: "#"
+                link: "/franchise"
             },
             {
                 linkName: "Social",
