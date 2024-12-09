@@ -9,13 +9,13 @@ import { BiSolidNavigation } from "react-icons/bi";
 export default function VisitUs() {
   return (
     <ProcessWrapper>
-      <SubTitle text="01. Visit Us"/>
-      <section className="flex flex-wrap gap-6 justify-center relative">
+      <SubTitle text="01. How it works"/>
+      <section className="flex flex-wrap gap-12 lg:gap-20 justify-center relative items-center xl:ml-[100px] ml-0">
       {/* <Flashcard className="left-[10px] -top-[212px] -rotate-[15deg] hidden md:flex bg-green-900 border-green-950"/> */}
       
-        <Image width={400} height={400} alt="pic" src="/visit-us/visit-us-1.webp" className="image-rb-border-frame basis-1/4 w-auto h-auto"/>
-        <Image width={400} height={400} alt="pic" src="/visit-us/visit-us-2.webp" className="image-rb-border-frame basis-1/4 w-auto h-auto"/>
-        <Image width={400} height={400} alt="pic" src="/visit-us/visit-us-3.webp" className="image-rb-border-frame basis-1/4 w-auto h-auto"/>
+        <Image width={600} height={400} alt="pic" src="/visit-us/camera.png" className="w-[300px] h-auto"/>
+        <Image width={600} height={400} alt="pic" src="/visit-us/print.png" className="w-[300px] h-auto"/>
+        <Image width={600} height={400} alt="pic" src="/visit-us/home-decore.png" className="w-[400px] h-auto"/>
       </section>
 
       <div className="flex flex-col text-center relative mt-8 ">
