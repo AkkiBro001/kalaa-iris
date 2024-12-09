@@ -11,7 +11,7 @@ function MobileNav() {
   const pathname = usePathname()
 
   return (
-    <ul className='gap-4 flex justify-around md:hidden sticky bottom-0 p-3 backdrop-blur-md mt-auto shadow-md border-t border-hairlineColor'>
+    <ul className='gap-4 flex justify-around md:hidden sticky bottom-0 p-3 backdrop-blur-md mt-auto shadow-md border-t border-hairlineColor z-50'>
         {
             navigation_links.map(link => (
                 <li key={link.id} className={cn(`flex flex-col items-center gap-2 text-xs ${pathname === link.link && "text-primaryColor"}`)}>
