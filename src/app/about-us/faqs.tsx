@@ -12,8 +12,8 @@ import {
         {
           FAQsData.map(faq => (
             <AccordionItem value={faq.id} key={faq.id}>
-            <AccordionTrigger>{faq.title}</AccordionTrigger>
-            <AccordionContent>
+            <AccordionTrigger className="text-lg">{faq.title}</AccordionTrigger>
+            <AccordionContent className="text-base">
             {faq.desc}
             </AccordionContent>
           </AccordionItem>
