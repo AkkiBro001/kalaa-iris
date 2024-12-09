@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import React from "react";
 import { Input } from "@/components/ui/input";
 import InputGroup from "../input-group/input-group";
 import {
@@ -15,6 +14,9 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button";
 
 export default function FranchiseForm() {
+
+
+
   return (
     <section className="px-6 py-20 flex flex-col md:flex-row gap-8 items-center ">
       <div>
