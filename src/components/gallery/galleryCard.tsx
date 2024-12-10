@@ -17,7 +17,7 @@ export default function GalleryCard({ name, short_code, img }: GalleryCardProps)
     <Dialog>
       <DialogTrigger asChild>
         <motion.div
-          className="flex flex-col w-full bg-secondaryColor overflow-auto rounded-md border border-b-[6px] border-primaryColor hover:scale-105 transition-all cursor-pointer"
+          className="flex flex-col w-full bg-secondaryColor overflow-auto rounded-md border border-b-[6px] border-primaryColor cursor-pointer"
           initial={{ opacity: 0, scale: 0.45 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.2 }}

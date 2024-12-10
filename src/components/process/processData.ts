@@ -101,29 +101,29 @@ export const chooseEffectsData = [
     {
         id: 1,
         img: "/effects-thumbnails/galaxy-effect.jpg",
-        title: "Single Galaxy Effects",
-        link: "#"
+        title: "Space Effects",
+        link: "/gallery/space"
     },
 
     {
         id: 2,
         img: "/effects-thumbnails/nature-effect.jpg",
-        title: "Single Natrue Effects",
-        link: "#"
+        title: "Natrue Effects",
+        link: "/gallery/nature"
     },
 
     {
         id: 3,
-        img: "/effects-thumbnails/fire-effect.jpg",
-        title: "Single Fire Effects",
-        link: "#"
+        img: "/effects-thumbnails/particle-effect.jpg",
+        title: "Particle Effects",
+        link: "/gallery/particle"
     },
 
     {
         id: 4,
         img: "/effects-thumbnails/couple-effect.jpg",
         title: "Couple Effects",
-        link: "#"
+        link: "/gallery/couple"
     }
 ]
 

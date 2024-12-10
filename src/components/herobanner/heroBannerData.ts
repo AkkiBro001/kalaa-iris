@@ -4,33 +4,29 @@ export const heroBanner  = [
         desktopBG: "/hero-banners/01_banner.png",
         mobileBG: "/hero-banners/01_mobile_banner.png",
         title: "Nebula Exploding",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci eos quae itaque maxime accusamus incidunt, corporis modi error, rem hic ut voluptatem praesentium",
-        eyeIcon: "/eye-clipart/eye-clip-1.svg"
+        desc: "It's a type of space effect where an iris is surrounded and merged with space elements.",
+        link: "/gallery/space"
+        
     },
     {
         id: "02",
         desktopBG: "/hero-banners/02_banner.png",
         mobileBG: "/hero-banners/02_mobile_banner.png",
         title: "Explosion Scaled",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci eos quae itaque maxime accusamus incidunt, corporis modi error, rem hic ut voluptatem praesentium",
-         eyeIcon: "/eye-clipart/eye-clip-2.svg"
+        desc: "It's a type of explosion effect where an iris explodes into multiple scaled fragments.",
+        link: "/gallery/explosion"
+        
     },
     {
         id: "03",
         desktopBG: "/hero-banners/03_banner.png",
         mobileBG: "/hero-banners/03_mobile_banner.png",
         title: "Terra Lava",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci eos quae itaque maxime accusamus incidunt, corporis modi error, rem hic ut voluptatem praesentium",
-        eyeIcon: "/eye-clipart/eye-clip-3.svg"
+        desc: "It's a type of natural effect where an iris blends with or becomes part of nature's elements.",
+        link: "/gallery/nature"
+        
     },
-    {
-        id: "04",
-        desktopBG: "/hero-banners/04_banner.png",
-        mobileBG: "/hero-banners/04_mobile_banner.png",
-        title: "Water Splash",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci eos quae itaque maxime accusamus incidunt, corporis modi error, rem hic ut voluptatem praesentium",
-        eyeIcon: "/eye-clipart/eye-clip-4.svg"
-    }
+  
     
 
 ]
