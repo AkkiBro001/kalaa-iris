@@ -2,7 +2,7 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import Image from "next/image";
 import { IoPrint } from "react-icons/io5";
-import { PrintDataType, printSize, PrintSizeDataType } from "./processData";
+import { PrintDataType, PrintSizeDataType } from "./processData";
 
 import { GiResize } from "react-icons/gi";
 import { useState } from "react";
@@ -14,9 +14,9 @@ import {
   SelectValue,
 } from "../ui/select";
 
-export function PrintCard({ details }: PrintDataType) {
+export function PrintCard({ material_details, size_details, selected_default }: PrintDataType) {
   const [selected_size, set_selected_size] = useState<PrintSizeDataType>(
-    printSize[0]
+    size_details.find(size => size.type === selected_default) as PrintSizeDataType
   );
 
   return (
@@ -33,15 +33,15 @@ export function PrintCard({ details }: PrintDataType) {
       <CardFooter className="flex justify-between px-4 py-6">
         <section className="flex justify-between gap-2 text-sm relative w-full">
           <div className="flex flex-col gap-2 ">
-            {details.map((detail) => (
-              <div className="flex gap-1" key={detail.label}>
+            
+              <div className="flex gap-1" key={material_details.label}>
                 <span className="flex gap-2 tracking-wider">
                   <IoPrint className="text-lg" />
-                  <span>{detail.label}</span>
+                  <span>{material_details.label}</span>
                 </span>
-                <span className="text-gray-300">{detail.value}</span>
+                <span className="text-gray-300">{material_details.value}</span>
               </div>
-            ))}
+            
 
             <div className="flex gap-1">
               <span className="flex gap-2 tracking-wider">
@@ -53,13 +53,13 @@ export function PrintCard({ details }: PrintDataType) {
               </span>
             </div>
 
-            <Select defaultValue={selected_size.id} onValueChange={value => {set_selected_size(printSize.find(size => size.id === value)!)}}>
+            <Select defaultValue={selected_size.id} onValueChange={value => {set_selected_size(size_details.find(size => size.id === value)!)}}>
               <SelectTrigger className="w-[180px] bg-secondaryColor">
                 <SelectValue placeholder="Select Size" />
               </SelectTrigger>
               <SelectContent className="bg-secondaryColor text-white">
                 {
-                  printSize.map(size => <SelectItem value={size.id} key={size.id}>{size.type}</SelectItem>)
+                  size_details.map(size => <SelectItem value={size.id} key={size.id}>{size.type}</SelectItem>)
                 }
                 
                 

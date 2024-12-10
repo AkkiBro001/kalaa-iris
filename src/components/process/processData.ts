@@ -33,13 +33,37 @@ export const printData = [
     {
         id: '1',
         
-        details: [
+        material_details: 
             {
                 
                 label: "Material Type: ",
                 value: "CANVAS"
             },
             
+        size_details: [
+            {
+                id: '1',
+                type: "A5",
+                size: ["8.3 x 5.3 in", "210 x 148 mm"],
+                images: "/print/canvas/A5.jpg",
+                
+            },
+        
+            {
+                id: '2',
+                type: "A4",
+                size: ["11.69 x 8.27 in", "297 x 210 mm"],
+                images: "/print/canvas/A4.jpg",
+                
+            },
+        
+            {
+                id: '3',
+                type: "A3",
+                size: ["16.5 x 11.7 in", "420 x 297 mm"],
+                images: "/print/canvas/A3.jpg",
+                
+            }
         ],
         selected_default: 'A3'
     },
@@ -47,26 +71,74 @@ export const printData = [
     {
         id: '2',
         
-        details: [
+        material_details: 
             {
                 
                 label: "Material Type: ",
                 value: "PAPER"
-            }
-        ],
-        
+            },
+            size_details: [
+                {
+                    id: '1',
+                    type: "A5",
+                    size: ["8.3 x 5.3 in", "210 x 148 mm"],
+                    images: "/print/paper/A5.jpg",
+                    
+                },
+            
+                {
+                    id: '2',
+                    type: "A4",
+                    size: ["11.69 x 8.27 in", "297 x 210 mm"],
+                    images: "/print/paper/A4.jpg",
+                    
+                },
+            
+                {
+                    id: '3',
+                    type: "A3",
+                    size: ["16.5 x 11.7 in", "420 x 297 mm"],
+                    images: "/print/paper/A3.jpg",
+                    
+                }
+            ],
+        selected_default: 'A4'
     },
 
     {
         id: '3',
        
-        details: [
+        material_details: 
             {
                
                 label: "Material Type: ",
                 value: "ACRYLIC"
-            }
-        ],
+            },
+            size_details: [
+                {
+                    id: '1',
+                    type: "A5",
+                    size: ["8.3 x 5.3 in", "210 x 148 mm"],
+                    images: "/print/acrylic/A5.jpg",
+                    
+                },
+            
+                {
+                    id: '2',
+                    type: "A4",
+                    size: ["11.69 x 8.27 in", "297 x 210 mm"],
+                    images: "/print/acrylic/A4.jpg",
+                    
+                },
+            
+                {
+                    id: '3',
+                    type: "A3",
+                    size: ["16.5 x 11.7 in", "420 x 297 mm"],
+                    images: "/print/acrylic/A3.jpg",
+                    
+                }
+            ],
         selected_default: 'A5'
     }
 ]
