@@ -15,9 +15,11 @@ function MenuLinks() {
     <ul className='gap-8 hidden md:flex'>
         {
             navigation_links.map(link => (
-                <li key={link.id} className={cn(`flex gap-2 hover:text-primaryColor ${pathname === link.link && "text-primaryColor"}`)}>
+                <li key={link.id}>
+                  <Link href={link.link} className={cn(`flex gap-2 hover:text-primaryColor ${pathname === link.link && "text-primaryColor"}`)}>
                     <link.icon/>
-                    <Link href={link.link}>{link.name}</Link>
+                    {link.name}
+                  </Link>
                 </li>
             ))
         }

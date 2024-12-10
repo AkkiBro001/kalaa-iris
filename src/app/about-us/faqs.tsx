@@ -14,7 +14,7 @@ import {
             <AccordionItem value={faq.id} key={faq.id}>
             <AccordionTrigger className="text-lg">{faq.title}</AccordionTrigger>
             <AccordionContent className="text-base">
-            {faq.desc}
+            {faq.desc.split('\n').map((desc, index) => <p key={index}>{desc}</p>)}
             </AccordionContent>
           </AccordionItem>
           ))

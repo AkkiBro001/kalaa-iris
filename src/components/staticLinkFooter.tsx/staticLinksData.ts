@@ -1,5 +1,5 @@
-import { FaYoutube } from "react-icons/fa";
-import { FaSquareFacebook, FaSquareInstagram } from "react-icons/fa6";
+// import { FaYoutube } from "react-icons/fa";
+import {  FaSquareInstagram } from "react-icons/fa6";
 
 export const static_links = [
     {
@@ -53,26 +53,26 @@ export const static_links = [
                 linkName: "Social",
                 link: "#",
                 social: [
-                    {
-                        id: 1,
-                        icon: FaSquareFacebook,
-                        title: "Facebook",
-                        link: "#"
-                    },
+                    // {
+                    //     id: 1,
+                    //     icon: FaSquareFacebook,
+                    //     title: "Facebook",
+                    //     link: "#"
+                    // },
                 
                     {
                         id: 2,
                         icon: FaSquareInstagram,
                         title: "Instagram",
-                        link: "#"
+                        link: "https://www.instagram.com/kalaairis/"
                     },
                 
-                    {
-                        id: 3,
-                        icon: FaYoutube,
-                        title: "Youtube",
-                        link: "#"
-                    },
+                    // {
+                    //     id: 3,
+                    //     icon: FaYoutube,
+                    //     title: "Youtube",
+                    //     link: "#"
+                    // },
                 
                     
                 ]

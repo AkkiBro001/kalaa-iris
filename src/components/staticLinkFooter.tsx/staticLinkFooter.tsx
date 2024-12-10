@@ -18,7 +18,7 @@ export default function StaticLinkFooter() {
                   return (<ul className="flex text-3xl gap-4" key={link.linkName}>
                     {link.social.map((social) => (
                       <li key={social.id}>
-                        <a href={social.link} className="hover:text-primaryColor">
+                        <a href={social.link} className="hover:text-primaryColor" target="_blank">
                           <social.icon/>
                         </a>
                       </li>
@@ -27,7 +27,7 @@ export default function StaticLinkFooter() {
                 }
                 return (
                   <li key={link.linkName} className="text-sm text-gray-400">
-                    <Link href={link.link} className="hover:underline">
+                    <Link href={link.link} className="hover:underline" >
                       {link.linkName}
                     </Link>
                   </li>

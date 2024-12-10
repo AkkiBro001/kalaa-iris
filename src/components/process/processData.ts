@@ -31,8 +31,8 @@ export const processData = [
 
 export const printData = [
     {
-        id: 1,
-        img: "/print/print-1.webp",
+        id: '1',
+        
         details: [
             {
                 
@@ -41,12 +41,12 @@ export const printData = [
             },
             
         ],
-
+        selected_default: 'A3'
     },
 
     {
-        id: 2,
-        img: "/print/print-2.webp",
+        id: '2',
+        
         details: [
             {
                 
@@ -54,12 +54,12 @@ export const printData = [
                 value: "PAPER"
             }
         ],
-
+        
     },
 
     {
-        id: 3,
-        img: "/print/print-1.webp",
+        id: '3',
+       
         details: [
             {
                
@@ -67,7 +67,7 @@ export const printData = [
                 value: "ACRYLIC"
             }
         ],
-
+        selected_default: 'A5'
     }
 ]
 

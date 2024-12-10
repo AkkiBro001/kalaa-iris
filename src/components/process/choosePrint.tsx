@@ -6,7 +6,7 @@ import { printData } from "./processData";
 
 export default function ChoosePrint() {
   return (
-    <ProcessWrapper>
+    <ProcessWrapper className="mb-10">
       <SubTitle text="03. Choose a Print"/>
 
       <section className="flex flex-wrap gap-6 justify-center">
