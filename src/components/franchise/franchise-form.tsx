@@ -84,7 +84,7 @@ export default function FranchiseForm() {
               <Textarea placeholder="How did you hear about us?" className="text-black"/>
             </div>
 
-            <Button className="xs:w-full md:w-[200px]" type="submit">Submit</Button>
+            <Button className="xs:w-full md:w-[200px] bg-primaryColor" type="submit">Submit</Button>
           </form>
         </section>
       </div>
