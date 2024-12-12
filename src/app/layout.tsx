@@ -5,6 +5,7 @@ import Navigation from "@/components/navigation/navigation";
 import MobileNav from "@/components/mobileNav/MobileNav";
 import FooterBar from "@/components/footer/footer";
 import StaticLinkFooter from "@/components/staticLinkFooter.tsx/staticLinkFooter";
+import FloatingWhatsApp from "@/components/floating-whatsapp/floating-whatsapp";
 
 export const metadata: Metadata = {
   title: "Kalaa Iris",
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${poppins.variable} antialiased bg-black text-white`}
       >
         <main className="w-full max-w-[1980px] mx-auto border-x border-hairlineColor min-h-[100vh] relative flex flex-col">
+          <FloatingWhatsApp />
           <Navigation />
           {children}
           <StaticLinkFooter />

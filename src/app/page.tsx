@@ -12,13 +12,13 @@ export default function Home() {
     <section>
       <HeroBanner />
      
-      <section className="">
+   
       <Process />
       <VisitUs />
       <ChooseEffects />
       <ChoosePrint />
       {/* <Social /> */}
-      </section>
+      
     </section>
   );
 }
