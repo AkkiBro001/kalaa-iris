@@ -66,7 +66,7 @@ export const category_details = [
         img: `${icon_base_url}space.png`,
         effects: [
             {
-                name: "Single Nabula Exploding Effect",
+                name: "Single Nebula Exploding Effect",
                 short_code: "S_SPA_01",
                 img: `${img_base_url}space/single-nebula-exploding-effect.jpg`
             },
