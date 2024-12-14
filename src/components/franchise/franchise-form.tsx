@@ -14,18 +14,36 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useForm, FormProvider, Controller } from "react-hook-form";
 import { cn } from "@/lib/utils";
+import { FranchiesFormType } from "./email-templeate";
+import { sendMail } from "./send-mail";
+import { emailSubject, htmlParser } from "@/lib/emailutils";
+import { useState } from "react";
+
 
 
 export default function FranchiseForm() {
   const EMAIL_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
   const MOBILE_REGEX = /^\+?[1-9][0-9]{9,11}$/g;
 
-  const methods = useForm();
-  const { register, control, setValue, formState: {errors} } = methods;
+  const methods = useForm<FranchiesFormType>();
+  const { register, control, setValue, formState: {errors}, reset } = methods;
+  const [loading, setLoading] = useState<boolean>(false)
+  
 
-
-
-  const onSubmit = (data: unknown) => console.log(data);
+  const onSubmit = async (data: FranchiesFormType) => {
+    setLoading(true)
+    try{
+      const html = htmlParser(data)
+      const subject = emailSubject(data.fname, data.lname)
+      await sendMail({subject: subject, html})
+      reset()
+    }catch(error){
+         console.log(error)
+    }finally {
+      setLoading(false)
+    }
+    
+  };
 
   return (
     <section className="px-6 py-20 flex flex-col md:flex-row gap-8 items-center ">
@@ -170,15 +188,17 @@ export default function FranchiseForm() {
               </div>
 
               <Button
-                className="xs:w-full md:w-[200px] bg-primaryColor"
+                className={`xs:w-full md:w-[200px]  ${loading ? "bg-gray-300 text-gray-600" : "bg-primaryColor"}`}
                 type="submit"
+                disabled={loading}
               >
-                Submit
+                {loading ? "Submitting..." : "Submit"}
               </Button>
             </form>
           </FormProvider>
         </section>
       </div>
+      {/* <EmailTemplate {...form_data}/> */}
     </section>
   );
 }
