@@ -41,7 +41,7 @@ export default function FranchiseForm() {
       await sendMail({subject: subject, html})
       reset()
       toast({title: "✅ Your application submitted successfully.",
-         description: "We'll connect with you soon",
+         description: "We will get in touch with you soon.",
          
       })
     }catch(error){

@@ -27,7 +27,7 @@ export default function AboutUs() {
         <p className='mb-6'>Join us in discovering the world of Kalaa Iris – where art, science, engineering and emotion converge
         to celebrate the magic that lies within your gaze.</p>
         </section>
-        <CommonHeader title='FAQs' className='capitalize mt-12 mb-8' id="faqs"/>
+        <CommonHeader title='FAQs' className='capitalize mt-12 mb-8 scroll-mt-[130px]' id="faqs"/>
         <FAQs />
       </Container>
     </div>
