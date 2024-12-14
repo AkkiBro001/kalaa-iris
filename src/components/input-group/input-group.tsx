@@ -14,7 +14,7 @@ export default function InputGroup({children, className, short_code}:Prorps) {
   return (
     <div className={cn("flex flex-col gap-2 flex-1", className)}>
       {children}
-      {errors[short_code]?.message && <p className="text-red-700 text-xs">{errors[short_code]?.message as string}</p>}
+      {errors[short_code]?.message && <p className="text-red-500 text-xs">{errors[short_code]?.message as string}</p>}
     </div>
   )
 }

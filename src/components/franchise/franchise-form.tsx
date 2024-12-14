@@ -102,7 +102,7 @@ export default function FranchiseForm() {
                     {...register("email", {
                       required: {
                         value: true,
-                        message: "Last Name is required",
+                        message: "Email Address is required",
                       },
                       pattern: {
                         value: EMAIL_REGEX,
