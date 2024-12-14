@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Kalaa Iris',
     short_name: 'Kalaa Iris',
-    description: 'Kalaa Iris – where art, science, engineering and emotion converge to celebrate the magic that lies within your gaze.',
+    description: 'Discover the captivating beauty of your iris with Kalaa Iris. We combine art, science, and technology to transform the unique patterns of your eye into breathtaking works of art.',
     start_url: '/',
     display: 'standalone',
     background_color: '#000',

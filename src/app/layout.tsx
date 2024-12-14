@@ -10,12 +10,12 @@ import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
   title: "KALAA IRIS | WE CREATE ‘EYE’ CONIC ART",
-  description: "Kalaa Iris – where art, science, engineering and emotion converge to celebrate the magic that lies within your gaze.",
+  description: "Discover the captivating beauty of your iris with Kalaa Iris. We combine art, science, and technology to transform the unique patterns of your eye into breathtaking works of art.",
   icons: [{url: "/fav-icon.png", sizes: "any", type: 'image/png'}],
-
+  keywords: "iris photography, eye art, unique iris patterns, personal photography, artistic iris captures, iris effects",
   openGraph: {
     title: "KALAA IRIS | WE CREATE ‘EYE’ CONIC ART",
-    description: "Welcome to Kalaa Iris – Where Art meets vision!",
+    description: "Discover the captivating beauty of your iris with Kalaa Iris. We combine art, science, and technology to transform the unique patterns of your eye into breathtaking works of art.",
     url: "https://kalaairis.com/",
   },
 };
