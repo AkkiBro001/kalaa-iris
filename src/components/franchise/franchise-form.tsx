@@ -46,7 +46,7 @@ export default function FranchiseForm() {
       })
     }catch(error){
          console.log(error)
-         toast({title: "❌ Your application submitted failed",
+         toast({title: "❌ Your application submitting failed",
           description: "Try again later",
           
        })
