@@ -18,12 +18,14 @@ import { FranchiesFormType } from "./email-templeate";
 import { sendMail } from "./send-mail";
 import { emailSubject, htmlParser } from "@/lib/emailutils";
 import { useState } from "react";
+import { useToast } from "@/hooks/use-toast"
 
 
 
 export default function FranchiseForm() {
   const EMAIL_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
   const MOBILE_REGEX = /^\+?[1-9][0-9]{9,11}$/g;
+  const { toast } = useToast()
 
   const methods = useForm<FranchiesFormType>();
   const { register, control, setValue, formState: {errors}, reset } = methods;
@@ -33,12 +35,21 @@ export default function FranchiseForm() {
   const onSubmit = async (data: FranchiesFormType) => {
     setLoading(true)
     try{
+      
       const html = htmlParser(data)
       const subject = emailSubject(data.fname, data.lname)
       await sendMail({subject: subject, html})
       reset()
+      toast({title: "✅ Your application submitted successfully.",
+         description: "We'll connect with you soon",
+         
+      })
     }catch(error){
          console.log(error)
+         toast({title: "❌ Your application submitted failed",
+          description: "Try again later",
+          
+       })
     }finally {
       setLoading(false)
     }
@@ -68,7 +79,7 @@ export default function FranchiseForm() {
               className="flex flex-col gap-4"
               onSubmit={methods.handleSubmit(onSubmit)}
             >
-              <div className="flex gap-4">
+              <div className="flex flex-col xs:flex-row gap-4">
                 <InputGroup short_code="fname">
                   <Input
                     placeholder="First Name"
@@ -95,7 +106,7 @@ export default function FranchiseForm() {
                 </InputGroup>
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex flex-col xs:flex-row gap-4">
                 <InputGroup short_code="email">
                   <Input
                     placeholder="Email Address"
@@ -158,7 +169,7 @@ export default function FranchiseForm() {
                 </InputGroup>
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex flex-col xs:flex-row gap-4">
                 <InputGroup short_code="state">
                   <Input
                     placeholder="State"

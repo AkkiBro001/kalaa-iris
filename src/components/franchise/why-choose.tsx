@@ -9,7 +9,7 @@ export default function WhyChoose() {
     <section className="p-6 min-h-screen grid place-content-center relative  z-[1]">
       <Image src="/tagline-bg.jpg" width={1440} height={810} alt="bg-img" className="w-full h-full object-cover -z-[1] absolute opacity-5"/>
       <Container>
-        <CommonHeader title='Why Choose Kalaa Iris Franchise' className='capitalize mb-12' id="faqs"/>
+        <CommonHeader title='Why Choose Kalaa Iris Franchise ?' className='capitalize mb-12' id="faqs"/>
         <section className="flex flex-col md:flex-row gap-6 mb-6">
           <article className="p-4 bg-secondaryColor rounded-md flex-1 border border-primaryColor border-l-4">
             <div>

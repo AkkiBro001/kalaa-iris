@@ -43,11 +43,10 @@ export default function StaticLinkFooter() {
           <motion.div
             key={index}
             className="absolute"
-            //   initial={{ opacity: 1 }} // Initial opacity is 0
             animate={{ opacity: [1, 0, 0, 1] }} // Animate opacity to 1
             transition={{
-              duration: 3,
-              delay: index * 1, // Stagger the animations by 0.5 seconds
+              duration: 5,
+              delay: index * 2, // Stagger the animations by 0.5 seconds
               repeat: Infinity,
               ease: "ease",
             }}

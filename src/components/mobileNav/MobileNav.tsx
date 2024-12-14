@@ -13,12 +13,14 @@ function MobileNav() {
   return (
     <ul className='gap-4 flex justify-around md:hidden sticky bottom-0 p-3 backdrop-blur-md mt-auto shadow-md border-t border-hairlineColor z-50'>
         {
-            navigation_links.map(link => (
-                <li key={link.id} className={cn(`flex flex-col items-center gap-2 text-xs ${pathname === link.link && "text-primaryColor"}`)}>
+            navigation_links.map(link => {
+                 const activeLink = (pathname.includes(link.link) && link.link.length > 1) || (pathname === link.link && link.link.length === 1)
+                return <li key={link.id} className={cn(`flex flex-col items-center gap-2 text-xs ${activeLink && "text-primaryColor"}`)}>
                     <link.icon/>
                     <Link href={link.link}>{link.name}</Link>
                 </li>
-            ))
+            }
+            )
         }
     </ul>
   )
