@@ -1,17 +1,20 @@
 "use client";
 import { cn } from "@/lib/utils"
 import { ReactNode } from "react"
+import {useFormContext } from "react-hook-form"
 
 type Prorps = {
     children: ReactNode,
-    className?: string
+    short_code: string,
+    className?: string,
 }
 
-export default function InputGroup({children, className}:Prorps) {
+export default function InputGroup({children, className, short_code}:Prorps) {
+  const { formState: { errors } } = useFormContext() // retrieve all hook methods
   return (
     <div className={cn("flex flex-col gap-2 flex-1", className)}>
       {children}
-      {/* <p className="text-red-700 text-sm">This field is required</p> */}
+      {errors[short_code]?.message && <p className="text-red-700 text-sm">{errors[short_code]?.message as string}</p>}
     </div>
   )
 }
