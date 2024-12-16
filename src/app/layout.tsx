@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased bg-black text-white`}
       >
-        <main className="w-full max-w-[1980px] mx-auto border-x border-hairlineColor min-h-[100vh] relative flex flex-col">
+        <main className="w-full max-w-[3000px] mx-auto min-h-[100vh] relative flex flex-col">
           <FloatingWhatsApp />
           <Toaster/>
           <Navigation />
