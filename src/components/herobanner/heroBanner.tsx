@@ -24,7 +24,7 @@ export function HeroBanner() {
     <section>
       <Carousel
         plugins={[plugin.current]}
-        className="w-full max-w-[1980px] overflow-hidden"
+        className="w-full max-w-[3000px] overflow-hidden"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={() => plugin.current.play()}
       >
