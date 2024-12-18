@@ -18,7 +18,7 @@ export default function GalleryMenu({ code, category_menu }: Props) {
   return (
     <section className="mt-8 mb-10">
       <Tabs defaultValue={code} className="w-full md:block hidden">
-        <TabsList className={`grid w-full grid-cols-6`}>
+        <TabsList className={`grid w-full grid-cols-7`}>
           {category_menu.map((category) => (
             <Link
               href={`/gallery/${category.short_code}`}

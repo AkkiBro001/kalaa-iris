@@ -134,12 +134,25 @@ export const category_details = [
     ]
     },
 
-    // {
-    //     short_code: "family",
-    //     name: "Family",
-    //     img: `${icon_base_url}family.png`,
-    //     effects: []
-    // }
+    {
+        short_code: "family",
+        name: "Family",
+        img: `${icon_base_url}family.png`,
+        effects: [
+            {
+                name: "Family 3 (Trio)",
+                short_code: "FAM_01",
+                img: `${img_base_url}family/Family-3.jpg`
+            },
+            {
+                name: "Family 5",
+                short_code: "FAM_03",
+                img: `${img_base_url}family/Family-5.jpg`
+            },
+    
+            
+        ]
+    }
 ]
 
 
