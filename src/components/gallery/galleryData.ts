@@ -146,7 +146,7 @@ export const category_details = [
             },
             {
                 name: "Family 5",
-                short_code: "FAM_03",
+                short_code: "FAM_02",
                 img: `${img_base_url}family/Family-5.jpg`
             },
     
