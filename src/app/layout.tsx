@@ -9,14 +9,17 @@ import FloatingWhatsApp from "@/components/floating-whatsapp/floating-whatsapp";
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: "KALAA IRIS | WE CREATE ‘EYE’ CONIC ART",
+  title: "KALAA IRIS | Iris Photography India",
   description: "Discover the captivating beauty of your iris with Kalaa Iris. We combine art, science, and technology to transform the unique patterns of your eye into breathtaking works of art.",
   icons: [{url: "/fav-icon.png", sizes: "any", type: 'image/png'}],
-  keywords: "iris photography, eye art, unique iris patterns, personal photography, artistic iris captures, iris effects",
+  keywords: "iris india, iris photography india, iris bengaluru, iris photography, eye photography india, eye photography bengaluru, eye photo, eye art, unique iris patterns, personal photography, artistic iris captures, iris effects",
   openGraph: {
-    title: "KALAA IRIS | WE CREATE ‘EYE’ CONIC ART",
+    title: "KALAA IRIS | Iris Photography India",
     description: "Discover the captivating beauty of your iris with Kalaa Iris. We combine art, science, and technology to transform the unique patterns of your eye into breathtaking works of art.",
     url: "https://kalaairis.com/",
+  },
+  alternates: {
+    canonical: "https://kalaairis.com/about-us",
   },
 };
 
