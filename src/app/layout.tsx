@@ -10,12 +10,12 @@ import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
   title: "KALAA IRIS | Iris Photography India",
-  description: "Discover the captivating beauty of your iris with Kalaa Iris. We combine art, science, and technology to transform the unique patterns of your eye into breathtaking works of art.",
+  description: "Kalaa Iris is India's first photogrphy studio, Discover the captivating beauty of your iris with Kalaa Iris. We combine art, science, and technology to transform the unique patterns of your eye into breathtaking works of art.",
   icons: [{url: "/fav-icon.png", sizes: "any", type: 'image/png'}],
   keywords: "kala iris, kalaa iris, iris india, iris photography india, kalaa iris india, kala iris india, iris bengaluru, kalaa iris bangalore, iris bangalore, iris photography bangalore, iris photography, eye photography india, eye photography bengaluru, eye photo, eye art, unique iris patterns, personal photography, artistic iris captures, iris effects",
   openGraph: {
     title: "KALAA IRIS | Iris Photography India",
-    description: "Discover the captivating beauty of your iris with Kalaa Iris. We combine art, science, and technology to transform the unique patterns of your eye into breathtaking works of art.",
+    description: "Kalaa Iris is India's first photogrphy studio, Discover the captivating beauty of your iris with Kalaa Iris. We combine art, science, and technology to transform the unique patterns of your eye into breathtaking works of art.",
     url: "https://kalaairis.com/",
   },
   alternates: {
