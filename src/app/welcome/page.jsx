@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function WelcomePage() {
   return (
     <section className='bg-[#49494b] h-screen relative flex items-center z-[1]'
-    style={{backgroundImage: `url(/Kalaa-Iris-white-01.png)`}}
+   
     >
       <motion.div className='p-6 flex flex-col mx-auto xl:mx-0 items-center gap-10'
       initial={{ opacity: 0, scale: 0 }}
