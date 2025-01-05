@@ -6,7 +6,7 @@ export const navigation_links = [
     {
         id: 1,
       name: "Home",
-      link: "/",
+      link: "/home",
       icon: House
     },
 

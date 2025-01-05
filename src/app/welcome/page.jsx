@@ -1,7 +1,7 @@
 "use client";
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import Link from 'next/link'
+// import Link from 'next/link'
 import React from 'react'
 import { motion } from "framer-motion";
 
@@ -23,7 +23,7 @@ export default function WelcomePage() {
         <motion.div whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
             >
-          <Link href="/"><Button className='uppercase tracking-wider min-w-[250px] hover:bg-primaryColor text-lg  font-bold shadow-xl' size="lg">Explore More</Button></Link>
+          <a href="/home"><Button className='uppercase tracking-wider min-w-[250px] hover:bg-primaryColor text-lg  font-bold shadow-xl' size="lg">Explore More</Button></a>
         </motion.div>
       </motion.div>
       <div className='bg-black/80 w-full h-full absolute top-0 left-0 -z-10 block xl:hidden'></div>
