@@ -26,7 +26,7 @@ export default function WelcomePage() {
           <a href="/home"><Button className='uppercase tracking-wider min-w-[250px] hover:bg-primaryColor text-lg  font-bold shadow-xl' size="lg">Explore More</Button></a>
         </motion.div>
       </motion.div>
-      <div className='bg-black/80 w-full h-full absolute top-0 left-0 -z-10 block xl:hidden'></div>
+      <div className='bg-black/60 w-full h-full absolute top-0 left-0 -z-10 block xl:hidden'></div>
       <video src='./welcome_screen.mp4' autoPlay muted loop className='h-full w-full absolute object-cover object-right top-0 -z-20'/>
     </section>
   )
