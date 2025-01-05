@@ -3,8 +3,14 @@ import Link from "next/link";
 import { iris_images, static_links } from "./staticLinksData";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function StaticLinkFooter() {
+
+  const pathname = usePathname()
+    const is_welcome_screen = pathname === "/welcome"
+    if(is_welcome_screen) return null
+
   return (
     <section className="px-6 py-10 bg-secondaryColor flex md:flex-row flex-col md:justify-center items-center gap-10">
       <article className="flex flex-col md:flex-row max-w-[700px] w-full justify-between gap-4">

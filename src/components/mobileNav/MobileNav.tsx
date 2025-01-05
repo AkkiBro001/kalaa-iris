@@ -9,7 +9,8 @@ import React from 'react'
 function MobileNav() {
 
   const pathname = usePathname()
-
+  const is_welcome_screen = pathname === "/welcome"
+  if(is_welcome_screen) return null
   return (
     <ul className='gap-4 flex justify-around md:hidden sticky bottom-0 p-3 backdrop-blur-md mt-auto shadow-md border-t border-hairlineColor z-50'>
         {

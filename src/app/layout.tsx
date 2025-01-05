@@ -8,6 +8,7 @@ import StaticLinkFooter from "@/components/staticLinkFooter.tsx/staticLinkFooter
 import FloatingWhatsApp from "@/components/floating-whatsapp/floating-whatsapp";
 import { Toaster } from "@/components/ui/toaster"
 
+
 export const metadata: Metadata = {
   title: "KALAA IRIS | Iris Photography India",
   description: "Kalaa Iris is India's first iris photography studio, Discover the captivating beauty of your iris with Kalaa Iris. We combine art, science, and technology to transform the unique patterns of your eye into breathtaking works of art.",
@@ -38,6 +39,7 @@ export default function RootLayout({
           <FloatingWhatsApp />
           <Toaster/>
           <Navigation />
+          
           {children}
           <StaticLinkFooter />
           <FooterBar />
