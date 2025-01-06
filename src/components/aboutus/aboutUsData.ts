@@ -2,7 +2,7 @@ export const FAQsData = [
     {
         id: "item-1",
         title: "How much does it cost?",
-        desc: `Our range of art starts from Rs 1200 for A4 size. Further prices depend on the choice of artwork effect, size and material of the print. Get in touch with the artist at the store for best prices.`
+        desc: `Our range of art starts from Rs 1999 for A4 size. Further prices depend on the choice of artwork effect, size and material of the print. Get in touch with the artist at the store for best prices.`
     },
 
     {
