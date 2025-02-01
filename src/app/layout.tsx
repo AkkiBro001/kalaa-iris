@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 };
 
 const init = init_fun()
-console.log(init)
+
 
 export default function RootLayout({
   children,
