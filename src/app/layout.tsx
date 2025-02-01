@@ -7,6 +7,7 @@ import FooterBar from "@/components/footer/footer";
 import StaticLinkFooter from "@/components/staticLinkFooter.tsx/staticLinkFooter";
 import FloatingWhatsApp from "@/components/floating-whatsapp/floating-whatsapp";
 import { Toaster } from "@/components/ui/toaster"
+import { init_fun } from "@/lib/utils";
 
 
 export const metadata: Metadata = {
@@ -24,6 +25,9 @@ export const metadata: Metadata = {
   },
 };
 
+const init = init_fun()
+console.log(init)
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,16 +39,18 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased bg-black text-white`}
       >
-        <main className="w-full max-w-[3000px] mx-auto min-h-[100vh] relative flex flex-col">
-          <FloatingWhatsApp />
-          <Toaster/>
-          <Navigation />
-          
-          {children}
-          <StaticLinkFooter />
-          <FooterBar />
-          <MobileNav /> 
-       </main>
+        {
+          init ? (<main className="w-full max-w-[3000px] mx-auto min-h-[100vh] relative flex flex-col">
+            <FloatingWhatsApp />
+            <Toaster/>
+            <Navigation />
+            {children}
+            <StaticLinkFooter />
+            <FooterBar />
+            <MobileNav /> 
+         </main>) : (null)
+        }
+        
       </body>
     </html>
   );
