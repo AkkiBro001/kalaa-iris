@@ -8,6 +8,13 @@ import StaticLinkFooter from "@/components/staticLinkFooter.tsx/staticLinkFooter
 import FloatingWhatsApp from "@/components/floating-whatsapp/floating-whatsapp";
 import { Toaster } from "@/components/ui/toaster"
 import { init_fun } from "@/lib/utils";
+import {
+  ContextMenu,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"
+
 
 
 export const metadata: Metadata = {
@@ -41,6 +48,8 @@ export default function RootLayout({
       >
         {
           init ? (<main className="w-full max-w-[3000px] mx-auto min-h-[100vh] relative flex flex-col">
+            <ContextMenu>
+            <ContextMenuTrigger>
             <FloatingWhatsApp />
             <Toaster/>
             <Navigation />
@@ -48,6 +57,13 @@ export default function RootLayout({
             <StaticLinkFooter />
             <FooterBar />
             <MobileNav /> 
+            </ContextMenuTrigger>
+            <ContextMenuContent className="bg-red-100 border-red-500 hover:!bg-red-100 focus-within:bg-red-100">
+            <ContextMenuItem className="hover:!bg-red-100 p-4 bg-red-100 focus-within:bg-red-100 flex gap-2">
+              <b>⚠️ Alert:</b><span>Content is protected</span>
+            </ContextMenuItem>
+            </ContextMenuContent>
+            </ContextMenu>
          </main>) : (null)
         }
         
