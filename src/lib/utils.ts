@@ -8,5 +8,5 @@ export function cn(...inputs: ClassValue[]) {
 
 
 export const init_fun = () => {
-    return isFuture(new Date(2025, 1, 14))
+    return isFuture(new Date(2025, 2, 10))
 }
