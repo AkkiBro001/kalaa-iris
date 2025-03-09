@@ -28,8 +28,9 @@ export async function sendMail({
   html: string;
 }) {
   try {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const isVerified = await transporter.verify();
-    console.log(isVerified)
+    // console.log(isVerified)
     
   } catch (error) {
     console.error('Something Went Wrong', SMTP_SERVER_USERNAME, SMTP_SERVER_PASSWORD, error);
@@ -49,7 +50,7 @@ export async function sendMail({
     subject: subject,
     html: html,
   });
-  console.log('Message Sent', info.messageId);
-  console.log('Mail sent to', SITE_MAIL_RECIEVER);
+  // console.log('Message Sent', info.messageId);
+  // console.log('Mail sent to', SITE_MAIL_RECIEVER);
   return info;
 }

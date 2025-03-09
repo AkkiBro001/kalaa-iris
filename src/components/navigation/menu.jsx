@@ -10,7 +10,7 @@ function MenuLinks() {
 
   const pathname = usePathname()
   
-  console.log(pathname)
+  
   
   return (
     <ul className='gap-8 hidden md:flex'>

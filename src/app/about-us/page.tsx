@@ -10,7 +10,7 @@ export default function AboutUs() {
       <AboutUsHeader />
       <Container className='p-6'>
         <section className='text-base md:text-lg'>
-          <p className='mb-6'>We believe that the eyes are not just windows to the soul, but canvases that hold intricate stories
+          <p className='mb-6'>We believe that eyes are not just windows to the soul, but canvases that hold intricate stories
         waiting to be told. We are a passionate team of photographers, engineers and artists dedicated to
         capturing the breathtaking beauty and individuality of the iris, one snapshot at a time.</p>
         

@@ -7,7 +7,7 @@ import FooterBar from "@/components/footer/footer";
 import StaticLinkFooter from "@/components/staticLinkFooter.tsx/staticLinkFooter";
 import FloatingWhatsApp from "@/components/floating-whatsapp/floating-whatsapp";
 import { Toaster } from "@/components/ui/toaster"
-import { init_fun } from "@/lib/utils";
+
 import {
   ContextMenu,
   ContextMenuContent,
@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   },
 };
 
-const init = init_fun()
 
 
 export default function RootLayout({
@@ -46,8 +45,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased bg-black text-white dark`}
       >
-        {
-          init ? (<main className="w-full max-w-[3000px] mx-auto min-h-[100vh] relative flex flex-col">
+        <main className="w-full max-w-[3000px] mx-auto min-h-[100vh] relative flex flex-col">
             <ContextMenu>
             <ContextMenuTrigger>
             <FloatingWhatsApp />
@@ -64,8 +62,8 @@ export default function RootLayout({
             </ContextMenuItem>
             </ContextMenuContent>
             </ContextMenu>
-         </main>) : (null)
-        }
+         </main>
+        
         
       </body>
     </html>
