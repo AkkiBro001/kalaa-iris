@@ -44,7 +44,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body
-        className={`${poppins.variable} antialiased bg-black text-white`}
+        className={`${poppins.variable} antialiased bg-black text-white dark`}
       >
         {
           init ? (<main className="w-full max-w-[3000px] mx-auto min-h-[100vh] relative flex flex-col">
