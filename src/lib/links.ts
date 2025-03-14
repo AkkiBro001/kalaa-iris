@@ -1,4 +1,4 @@
-import { Handshake, House, Images, Users } from "lucide-react";
+import { Handshake, House, Images, Newspaper, Users } from "lucide-react";
 
 
 
@@ -26,6 +26,13 @@ export const navigation_links = [
 
     {
         id: 4,
+        name: "Blog",
+        link: "/blog",
+        icon: Newspaper
+    },
+
+    {
+        id: 5,
         name: "Franchise",
         link: "/franchise",
         icon: Handshake
