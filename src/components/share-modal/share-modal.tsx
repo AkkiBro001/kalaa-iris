@@ -11,6 +11,7 @@ import { useCopyToClipboard } from "@uidotdev/usehooks";
 import { usePathname } from "next/navigation";
 import { useToast } from "@/hooks/use-toast";
 import { FaSquareFacebook } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 
 
@@ -59,6 +60,12 @@ export default function ShareModal({host} : {host: string}) {
                 <a href={`https://www.facebook.com/sharer/sharer.php?u=${host}${pathname}`}target="_blank">
                     <Button variant="ghost" size="icon" className="hover:bg-primaryColor hover:text-black">
                        <FaSquareFacebook className="text-3xl scale-150"/>
+                    </Button>
+                </a>
+
+                <a href={`https://twitter.com/intent/tweet?text=Check%20this%20out!&url=${encodeURIComponent(host+pathname)}&hashtags=kalaa-iris,iris-photography`}target="_blank">
+                    <Button variant="ghost" size="icon" className="hover:bg-primaryColor hover:text-black">
+                       <FaSquareXTwitter className="text-3xl scale-150"/>
                     </Button>
                 </a>
             </div>
