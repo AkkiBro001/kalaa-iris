@@ -10,7 +10,7 @@ export default function Blog_Details_Image_Section({
     grid_template_areas,}: blog_data_type) {
   return (
       <div
-        className="blog-image-section grid md:max-w-[500px] max-w-[800px] self-start w-full flex-shrink-0 gap-4"
+        className="blog-image-section grid md:max-w-[500px] max-w-[800px] self-start w-full flex-shrink-0 gap-4 mx-auto"
         style={{
           gridTemplateColumns: grid_template_column,
           gridTemplateAreas: grid_template_areas,

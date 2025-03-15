@@ -2,9 +2,12 @@ import { Calendar} from 'lucide-react'
 import { blog_data_type } from '@/components/blogCard/blog-data'
 
 import ShareModal from '@/components/share-modal/share-modal'
+import { headers } from 'next/headers'
 
 
-export default function Blog_Details_Info_Section({title, date, body}: blog_data_type) {
+export default async function Blog_Details_Info_Section({title, date, body}: blog_data_type) {
+  const headerList = await headers()
+      const host = await headerList.get("host")!
   return (
     <div className='blog-details-section flex flex-col gap-4'>
       <section className='details'>
@@ -23,7 +26,7 @@ export default function Blog_Details_Info_Section({title, date, body}: blog_data
         
       </section>
 
-      <ShareModal />
+      <ShareModal host={host}/>
       
     </div>
   )

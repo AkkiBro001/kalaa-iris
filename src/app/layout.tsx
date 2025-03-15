@@ -49,12 +49,13 @@ export default function RootLayout({
             <ContextMenu>
             <ContextMenuTrigger>
             <FloatingWhatsApp />
-            <Toaster/>
+            
             <Navigation />
             {children}
             <StaticLinkFooter />
             <FooterBar />
-            <MobileNav /> 
+            <MobileNav />
+            
             </ContextMenuTrigger>
             <ContextMenuContent className="bg-red-100 border-red-500 hover:!bg-red-100 focus-within:bg-red-100">
             <ContextMenuItem className="hover:!bg-red-100 p-4 bg-red-100 focus-within:bg-red-100 flex gap-2">
@@ -62,6 +63,7 @@ export default function RootLayout({
             </ContextMenuItem>
             </ContextMenuContent>
             </ContextMenu>
+            <Toaster />
          </main>
         
         
