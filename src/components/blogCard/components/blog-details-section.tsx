@@ -18,7 +18,7 @@ export default function Blog_Details_Section({title, card_content, date, id}: bl
         </p>
         <p className='opacity-75'>
 
-          {card_content}
+          {card_content.slice(0, 275)}{"..."}
         </p>
       </section>
       <Link href={`/blogs/${id}`} className='mt-auto'>
