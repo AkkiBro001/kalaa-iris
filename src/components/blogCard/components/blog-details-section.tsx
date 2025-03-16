@@ -20,7 +20,7 @@ export default function Blog_Details_Section({title, card_content, date, id}: bl
           {card_content}
         </p>
       </section>
-      <Link href={"/blog/"+id}>
+      <Link href={`/blogs/${id}`}>
       <Button>
         <span>Read More</span>
         <MoveRight />

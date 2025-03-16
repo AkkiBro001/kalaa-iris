@@ -27,15 +27,15 @@ export async function generateMetadata(
     openGraph: {
       title: blog.title,
       description: blog.card_content,
-      url: `https://kalaairis/blog/${blogId}`,
-      images: [{ url: 'https://kalaairis/blog/_next/image?url=%2FKalaa-Iris-white-01.png&w=256&q=75', width: 500, height: 500, alt: blog.title }],
+      url: `https://kalaairis/blogs/${blogId}`,
+      images: [{ url: 'https://kalaairis/blogs/_next/image?url=%2FKalaa-Iris-white-01.png&w=256&q=75', width: 500, height: 500, alt: blog.title }],
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
       title: blog.title,
       description: blog.card_content,
-      images: ['https://kalaairis/blog/_next/image?url=%2FKalaa-Iris-white-01.png&w=256&q=75'],
+      images: ['https://kalaairis/blogs/_next/image?url=%2FKalaa-Iris-white-01.png&w=256&q=75'],
     },
   };
 }

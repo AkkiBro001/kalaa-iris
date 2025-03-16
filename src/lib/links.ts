@@ -26,8 +26,8 @@ export const navigation_links = [
 
     {
         id: 4,
-        name: "Blog",
-        link: "/blog",
+        name: "Blogs",
+        link: "/blogs",
         icon: Newspaper
     },
 

@@ -3,7 +3,7 @@ import BlogCard from "@/components/blogCard/blogCard";
 import Container from "@/components/container/container";
 
 
-export default function BlogPage() {
+export default function BlogsPage() {
   return (
     <Container>
       <section className="blog grid lg:grid-cols-2 pt-8 pb-20 px-4">
