@@ -4,6 +4,7 @@ import Blog_Details_Image_Section from './_components/blog-details-image-section
 import Blog_Details_Info_Section from './_components/blog-details-info-section'
 import { Metadata } from 'next'
 import Blob_Details_Banner from './_components/blog-details-banner'
+import BlogPrevNextBtn from '@/components/blog-next-prev-btns/blog-next-btn'
 
 type Props = {
   params: Promise<{ blogId: string }>
@@ -47,9 +48,11 @@ export default async function BlogDetailsPage({params}: {params: Promise<{ blogI
     const { blogId} = await params
     
     const blog = blog_data.find(blog => blog.id === blogId)! 
+    const blogIndex = blog_data.findIndex(blog => blog.id === blogId)! 
    
   return (
-    !blog.is_html_body ? (
+    <>
+    {!blog.is_html_body ? (
     <section>
     <Blob_Details_Banner {...blog}/>
     <div className='blog-details-page p-4 lg:p-12 flex lg:flex-row flex-col gap-6'>
@@ -60,5 +63,11 @@ export default async function BlogDetailsPage({params}: {params: Promise<{ blogI
     ) 
     : 
     null
+  }
+  <section className='p-4 lg:p-12 flex items-center gap-4 flex-wrap'>
+    <BlogPrevNextBtn btn_type="prev" id={blogIndex}/>
+    <BlogPrevNextBtn btn_type="next" id={blogIndex}/>
+  </section>
+  </>
   )
 }
