@@ -3,6 +3,7 @@ import React from 'react'
 import Blog_Details_Image_Section from './_components/blog-details-image-section'
 import Blog_Details_Info_Section from './_components/blog-details-info-section'
 import { Metadata } from 'next'
+import Blob_Details_Banner from './_components/blog-details-banner'
 
 type Props = {
   params: Promise<{ blogId: string }>
@@ -48,9 +49,16 @@ export default async function BlogDetailsPage({params}: {params: Promise<{ blogI
     const blog = blog_data.find(blog => blog.id === blogId)! 
    
   return (
-    <section className='blog-details-page p-4 lg:p-12 flex lg:flex-row flex-col gap-6'>
+    !blog.is_html_body ? (
+    <section>
+    <Blob_Details_Banner {...blog}/>
+    <div className='blog-details-page p-4 lg:p-12 flex lg:flex-row flex-col gap-6'>
       <Blog_Details_Image_Section {...blog}/>
       <Blog_Details_Info_Section {...blog} />
+    </div>
     </section>
+    ) 
+    : 
+    null
   )
 }

@@ -1,10 +1,15 @@
-import {blog_1_1, blog_1_2, blog_1_3} from "./blog-images"
+import { compareDesc } from "date-fns";
+import {
+    blog_1_1, blog_1_2, blog_1_3,
+    blog_2_1, blog_2_2, blog_2_3, blog_2_title,
+    blog_4_1, blog_4_2, blog_4_3, blog_4_4, blog_4_title
+} from "./blog-images"
 
 export const blog_data = [
     {
         id: "1",
         images: [blog_1_1, blog_1_2, blog_1_3],
-        date: "21st Dec 2024",
+        date: "12-21-2024",
         image_grid_area_name: ["blog_1_1", "blog_1_2", "blog_1_3"],
         grid_template_areas: `"blog_1_2 blog_1_2 blog_1_1 blog_1_1 blog_1_1"
                               "blog_1_2 blog_1_2 blog_1_1 blog_1_1 blog_1_1"
@@ -12,6 +17,8 @@ export const blog_data = [
                               "blog_1_3 blog_1_3 blog_1_1 blog_1_1 blog_1_1"`,
         grid_template_column: "1fr 1fr 1fr 1fr 1fr",
         title: "Iris Photography: Where Art meets Science",
+        is_html_body: false,
+        blog_banner_image: null,
         body: [
             "Iris photography blends aesthetic beauty with biological significance. Known as artistic iris photography, this genre goes beyond simple visual appeal, capturing distinct personal identity traits that hold value in fields like ophthalmology and biometric security. The intricate patterns of the iris not only captivate the eye, but also contain valuable data for scientific exploration.",
 
@@ -28,14 +35,92 @@ export const blog_data = [
 
         card_content: "Iris photography blends aesthetic beauty with biological significance. Known as artistic iris photography, this genre goes beyond simple visual appeal, capturing distinct personal identity traits that hold value in fields like ophthalmology and biometric security. The intricate patterns of the iris not only captivate the eye, but also contain valuable data for scientific exploration.",
 
-        social_links: [
-            {
-                id: "instagram",
-                url: "/",
-            }
-        ]
 
-    }
-]
+    },
+
+    {
+        id: "2",
+        images: [blog_2_1, blog_2_2, blog_2_3],
+        date: "12-28-2024",
+        image_grid_area_name: ["blog_2_1", "blog_2_2", "blog_2_3"],
+        grid_template_areas: `
+                              "blog_2_1 blog_2_1 blog_2_1 blog_2_1 blog_2_1 blog_2_1"
+                              "blog_2_1 blog_2_1 blog_2_1 blog_2_1 blog_2_1 blog_2_1"
+                              "blog_2_1 blog_2_1 blog_2_1 blog_2_1 blog_2_1 blog_2_1"
+
+                              "blog_2_2 blog_2_2 blog_2_2 blog_2_3 blog_2_3 blog_2_3"
+                              "blog_2_2 blog_2_2 blog_2_2 blog_2_3 blog_2_3 blog_2_3"
+                              `,
+        grid_template_column: "1fr 1fr 1fr 1fr 1fr 1fr",
+        title: "Why Iris Photography is the Perfect Personalized Gift!",
+        is_html_body: false,
+        blog_banner_image: blog_2_title, 
+        body: [
+            {
+                title: "Unique: ",
+                body: "No two irises are the same on this planet. No, not even with identical twins and also, not even with your other eye. The intricate patterns, rings, and grooves are shaped by genetics, making them a symbol of genetic individuality. So, this makes the gift truly one in billions."
+            },
+
+            {
+                title: "Personalized: ",
+                body: "Iris art is a unique representation of your individual personality. You can add their dear name or special quote in the frame which will amplify the effect multifold."
+            },
+
+            {
+                title: "Intricate: ",
+                body: "Iris art highlights the detailed patterns and vivid colors of your iris. So, it’s just not another frame on your wall. It’s a depiction of intricate patterns, textures and colors."
+            },
+           
+            {
+                title: "Sentimental: ",
+                body: "Iris art makes for a thoughtful and meaningful gift for someone special on a memorable occasion. It stays with you forever as a memory even when the person is not with you."
+            },
+
+            {
+                title: "Decorative: ",
+                body: "Adding a beautiful artwork to someone’s home décor which they will cherish forever makes the gift unforgettable."
+            },
+
+           
+           
+            "Moreover, getting a family Iris artwork frame not only shows the genetic connection at a glance but also proves to be a unique memory of the elderly.",
+
+            "Did you know - Kalaa Iris is India’s first dedicated Iris Photography Studio! Get in touch today to create a customized artwork. "
+        ],
+
+        card_content: "No two irises are the same on this planet. No, not even with identical twins and also, not even with your other eye. The intricate patterns, rings, and grooves are shaped by genetics, making them a symbol of genetic individuality. So, this makes the gift truly one in billions.",
+
+
+    },
+
+
+    {
+        id: "4",
+        images: [blog_4_1, blog_4_2, blog_4_3, blog_4_4],
+        date: "01-10-2025",
+        image_grid_area_name: ["blog_4_1", "blog_4_2", "blog_4_3", "blog_4_4"],
+        grid_template_areas: `"blog_4_1 blog_4_1 blog_4_1 blog_4_2 blog_4_2 blog_4_2"
+                              "blog_4_1 blog_4_1 blog_4_1 blog_4_2 blog_4_2 blog_4_2"
+                              "blog_4_3 blog_4_3 blog_4_3 blog_4_4 blog_4_4 blog_4_4"
+                              "blog_4_3 blog_4_3 blog_4_3 blog_4_4 blog_4_4 blog_4_4"`,
+        grid_template_column: "1fr 1fr 1fr 1fr 1fr 1fr",
+        title: "A Biological masterpiece within our Eyes",
+        is_html_body: false,
+        blog_banner_image: blog_4_title,
+        body: [
+            "How has nature managed to create billions of unique iris? The answer to this is complex and fascinating. Human Iris starts to develop in the womb in 3rd-4th month of pregnancy. Genetic code plays a vital role in the overall structure of the iris. However, this isn’t the only factor involved here. Complicated developmental process and environmental factors also influence the overall appearance of the iris.",
+
+            "In the development process of an iris, tissues fold, expand and contract resulting in the intricate ridges, trenches and flower shaped patterns. Since this process is random, the outcome of this is pretty unique. Even with identical twins who share nearly similar DNA, don’t share the iris pattern. While the tissue in the iris develops and the pigment is deposited, variations do occur. Other factors like position of fetus or minor variations in blood flow also influence the final result. ",
+
+            "This is nature’s own way of ensuring individuality in appearance.",
+
+            "Capture the beauty of your genetic individuality with Kalaa Iris and create an ‘eye’conic masterpiece, quite literally!"
+        ],
+
+        card_content: "How has nature managed to create billions of unique iris? The answer to this is complex and fascinating. Human Iris starts to develop in the womb in 3rd-4th month of pregnancy. Genetic code plays a vital role in the overall structure of the iris. However, this isn’t the only factor involved here. Complicated developmental process and environmental factors also influence the overall appearance of the iris.",
+
+
+    },
+].sort((a,b) => compareDesc(new Date(a.date), new Date(b.date)))
 
 export type blog_data_type = typeof blog_data[0];

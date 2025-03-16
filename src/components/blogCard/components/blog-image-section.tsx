@@ -11,7 +11,7 @@ export default function Blog_Image_Section({
 }: blog_data_type) {
   return (
     <div
-      className="blog-image-section grid min-w-1/3 gap-2"
+      className="blog-image-section grid min-w-[300px] gap-2"
       style={{
         gridTemplateColumns: grid_template_column,
         gridTemplateAreas: grid_template_areas,
