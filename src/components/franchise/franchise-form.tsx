@@ -150,7 +150,7 @@ export default function FranchiseForm() {
                     defaultValue={"India"}
                     render={({ field}) => (
                       <Select defaultValue="India" {...field} onValueChange={(value) => setValue("country", value)}>
-                        <SelectTrigger className="text-black">
+                        <SelectTrigger className="text-white">
                           <SelectValue placeholder="Select Country" />
                         </SelectTrigger>
                         <SelectContent>
