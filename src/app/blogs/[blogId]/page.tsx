@@ -5,6 +5,7 @@ import Blog_Details_Info_Section from './_components/blog-details-info-section'
 import { Metadata } from 'next'
 import Blob_Details_Banner from './_components/blog-details-banner'
 import BlogPrevNextBtn from '@/components/blog-next-prev-btns/blog-next-btn'
+import { get_custom_blog } from '@/components/custom-blog/custom-blog-helper'
 
 type Props = {
   params: Promise<{ blogId: string }>
@@ -49,7 +50,7 @@ export default async function BlogDetailsPage({params}: {params: Promise<{ blogI
     
     const blog = blog_data.find(blog => blog.id === blogId)! 
     const blogIndex = blog_data.findIndex(blog => blog.id === blogId)! 
-   
+    const Custom_Blog = get_custom_blog(blogId)
   return (
     <>
     {!blog.is_html_body ? (
@@ -62,7 +63,7 @@ export default async function BlogDetailsPage({params}: {params: Promise<{ blogI
     </section>
     ) 
     : 
-    null
+    !!Custom_Blog ? <Custom_Blog {...blog}/> : null
   }
   <section className='p-4 lg:p-12 flex items-center gap-4 flex-wrap'>
     <BlogPrevNextBtn btn_type="prev" id={blogIndex}/>
