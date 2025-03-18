@@ -2,6 +2,11 @@ import { compareDesc } from "date-fns";
 import {
     blog_1_1, blog_1_2, blog_1_3,
     blog_2_1, blog_2_2, blog_2_3, blog_2_title,
+    blog_3_1,
+    blog_3_2,
+    blog_3_3,
+    blog_3_4,
+    blog_3_title,
     blog_4_1, blog_4_2, blog_4_3, blog_4_4, blog_4_title
 } from "./blog-images"
 
@@ -93,11 +98,36 @@ export const blog_data = [
 
     },
 
+    {
+        id: "3",
+        images: [blog_3_1, blog_3_2, blog_3_3, blog_3_4],
+        date: "01-06-2025",
+        image_grid_area_name: ["blog_3_1", "blog_3_2", "blog_3_3", "blog_3_4"],
+        grid_template_areas: `"blog_3_1 blog_3_1 blog_3_1 blog_3_2 blog_3_2"
+                              "blog_3_1 blog_3_1 blog_3_1 blog_3_2 blog_3_2"
+                              "blog_3_1 blog_3_1 blog_3_1 blog_3_2 blog_3_2"
+                              "blog_3_4 blog_3_4 blog_3_3 blog_3_3 blog_3_3"
+                              "blog_3_4 blog_3_4 blog_3_3 blog_3_3 blog_3_3"
+                              "blog_3_4 blog_3_4 blog_3_3 blog_3_3 blog_3_3"`,
+        grid_template_column: "1fr 1fr 1fr 1fr 1fr",
+        image_classes: "object-contain object-center bg-white",
+        title: "How to Select the Perfect Frame for Your Iris Print",
+        is_html_body: true,
+        blog_banner_image: blog_3_title,
+        body: [
+            
+        ],
+
+        card_content: "When choosing a frame for your iris print, focus on one that complements the colors and details of the iris. Opt for simple, sleek designs with neutral tones like black, white, or soft wood finishes that allow the intricate patterns of the iris to stand out. Additionally, take into account the overall vibe of your space and pick a frame that suits the atmosphere you want to create—be it modern, minimalist, or traditional.",
+
+
+    },
+
 
     {
         id: "4",
         images: [blog_4_1, blog_4_2, blog_4_3, blog_4_4],
-        date: "01-10-2025",
+        date: "01-12-2025",
         image_grid_area_name: ["blog_4_1", "blog_4_2", "blog_4_3", "blog_4_4"],
         grid_template_areas: `"blog_4_1 blog_4_1 blog_4_1 blog_4_2 blog_4_2 blog_4_2"
                               "blog_4_1 blog_4_1 blog_4_1 blog_4_2 blog_4_2 blog_4_2"

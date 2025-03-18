@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { blog_data_type } from "../blog-data";
+import { cn } from "@/lib/utils";
 
 export default function Blog_Image_Section({
   images,
@@ -8,6 +9,7 @@ export default function Blog_Image_Section({
   image_grid_area_name,
   grid_template_column,
   grid_template_areas,
+  image_classes
 }: blog_data_type) {
   return (
     <div
@@ -25,7 +27,7 @@ export default function Blog_Image_Section({
           height={300}
           style={{ gridArea: image_grid_area_name[index] }}
           key={`blog-img-${id}-${index}`}
-          className="w-full h-full object-cover rounded-xl"
+          className={cn("w-full h-full object-cover rounded-xl", image_classes && image_classes)}
         />
       ))}
     </div>
