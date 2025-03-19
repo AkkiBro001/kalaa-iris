@@ -5,9 +5,15 @@ import { Calendar } from 'lucide-react'
 import { format } from 'date-fns'
 import Image from 'next/image'
 import { blog_3_1, blog_3_2, blog_3_3, blog_3_4, blog_3_5, blog_3_6_1, blog_3_6_2, blog_3_7 } from '../blogCard/blog-images'
+import ShareModal from '../share-modal/share-modal'
+import { headers } from 'next/headers'
 
-export default function Blog_3(blog : blog_data_type) {
+export default async function Blog_3(blog : blog_data_type) {
   const {date} = blog
+
+   const headerList = await headers()
+   const host = await headerList.get("host")!
+
   return (
     <section>
        <Blob_Details_Banner className='h-[400px]' {...blog}/>
@@ -111,7 +117,12 @@ export default function Blog_3(blog : blog_data_type) {
         <p>At Kalaa Iris, experienced professionals, who after site visit guide you to create an exquisite artwork customized for your space.</p>
 
         </div>
+        <div className='mt-8'>
+
+        <ShareModal host={host}/>
         </div>
+        </div>
+
     </section>
   )
 }
