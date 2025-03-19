@@ -25,7 +25,7 @@ export default function Blog_3(blog : blog_data_type) {
 
         <p className='opacity-75 mb-4'>When choosing a frame for your iris print, focus on one that complements the colors and details of the iris. Opt for simple, sleek designs with neutral tones like black, white, or soft wood finishes that allow the intricate patterns of the iris to stand out. Additionally, take into account the overall vibe of your space and pick a frame that suits the atmosphere you want to create—be it modern, minimalist, or traditional.</p>
 
-        <b className='opacity-75 mb-4 block text-primaryColor text-xl'>Key considerations:</b>
+        <b className='mb-4 block text-primaryColor text-xl'>Key considerations:</b>
 
         {/*---- Color palette ----*/}
         <ul className='list-disc ml-4'>
@@ -52,7 +52,7 @@ export default function Blog_3(blog : blog_data_type) {
 
 
         {/*---- Frame style ----*/}
-        <ul className='list-disc my-10'>
+        <ul className='list-disc my-10  ml-4'>
           <li className='font-bold text-lg ml-4'>Frame style:</li>
           <ul className='grid lg:grid-cols-3 sm:grid-cols-2 gap-5 py-4'>
             <li className='rounded-lg flex flex-col gap-4 relative overflow-hidden bg-white text-black'>
@@ -80,7 +80,7 @@ export default function Blog_3(blog : blog_data_type) {
 
 
         {/*---- Matting ----*/}
-        <ul className='list-disc my-10'>
+        <ul className='list-disc my-10  ml-4'>
           <li className='font-bold text-lg ml-4'>Matting:</li>
           <ul className='grid lg:grid-cols-3 sm:grid-cols-2 gap-5 py-4'>
             <li className='rounded-lg flex flex-col gap-4 relative overflow-hidden bg-white text-black'>
@@ -100,7 +100,7 @@ export default function Blog_3(blog : blog_data_type) {
         </ul>
 
 
-        <b className='opacity-75 mb-4 block text-primaryColor text-xl'>Additional factors to consider:</b>
+        <b className='mb-4 block text-primaryColor text-xl'>Additional factors to consider:</b>
 
         <ul className='list-disc ml-4 mb-10 flex flex-col gap-4'>
         <li><b>Room decor:</b> Make sure the frame’s style and color align with the overall aesthetic of the room where it will be displayed.</li>
