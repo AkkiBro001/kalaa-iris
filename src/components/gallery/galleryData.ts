@@ -1,7 +1,7 @@
 export const gallery_banner_data = [
     {
         id: 'gallery-1',
-        img: { desktop: "/gallery/banners/single-terra-forest-effect_desktop.jpg", mobile: "/gallery/banners/single-terra-forest-effect_mobile.jpg" },
+        img: { desktop: "/gallery/banners/couple-infinity_desktop.jpg", mobile: "/gallery/banners/couple-infinity_mobile.jpg" },
         position: 1,
     },
     {
@@ -11,7 +11,7 @@ export const gallery_banner_data = [
     },
     {
         id: 'gallery-3',
-        img: { desktop: "/gallery/banners/single-foggy-effect_desktop.jpg", mobile: "/gallery/banners/single-foggy-effect_mobile.jpg" },
+        img: { desktop: "/gallery/banners/family-trio_desktop.jpg", mobile: "/gallery/banners/family-trio_mobile.jpg" },
         position: 3,
     },
     {
@@ -37,11 +37,11 @@ export const category_details = [
         name: "Nature",
         img: `${icon_base_url}nature.png`,
         effects: [
-            {
-                name: "Single Forest Effect",
-                short_code: "S_NAT_01",
-                img: `${img_base_url}nature/single-forest-effect.jpg`
-            },
+            // {
+            //     name: "Single Forest Effect",
+            //     short_code: "S_NAT_01",
+            //     img: `${img_base_url}nature/single-forest-effect.jpg`
+            // },
             {
                 name: "Single Lava Effect",
                 short_code: "S_NAT_02",
@@ -52,11 +52,11 @@ export const category_details = [
                 short_code: "S_NAT_03",
                 img: `${img_base_url}nature/single-water-splash-effect.jpg`
             },
-            {
-                name: "Single Foggy Effect",
-                short_code: "S_NAT_04",
-                img: `${img_base_url}nature/single-foggy-effect.jpg`
-            },
+            // {
+            //     name: "Single Foggy Effect",
+            //     short_code: "S_NAT_04",
+            //     img: `${img_base_url}nature/single-foggy-effect.jpg`
+            // },
         ]
     },
 
@@ -107,11 +107,11 @@ export const category_details = [
                 short_code: "S_PAR_01",
                 img: `${img_base_url}particle/single-bubble-effect.jpg`
             },
-            {
-                name: "Single Dust Effect",
-                short_code: "S_PAR_02",
-                img: `${img_base_url}particle/single-dust-effect.jpg`
-            }
+            // {
+            //     name: "Single Dust Effect",
+            //     short_code: "S_PAR_02",
+            //     img: `${img_base_url}particle/single-dust-effect.jpg`
+            // }
         ]
     },
 

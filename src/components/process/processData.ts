@@ -179,7 +179,7 @@ export const chooseEffectsData = [
 
     {
         id: 2,
-        img: "/effects-thumbnails/nature-effect.jpg",
+        img: "/effects-thumbnails/fire-effect.jpg",
         title: "Natrue Effects",
         link: "/gallery/nature"
     },
