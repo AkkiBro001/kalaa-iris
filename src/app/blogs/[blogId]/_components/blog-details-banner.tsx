@@ -7,7 +7,7 @@ export default function Blob_Details_Banner({blog_banner_image, title, className
     if(!blog_banner_image) return null
   return (
     <div className={cn('h-[300px] overflow-hidden relative flex items-center justify-center', className)}>
-      <Image width={1920} height={900} src={blog_banner_image} alt="blog-banner" className='w-full h-full opacity-20 object-fill'/>
+      <Image width={1920} height={900} src={blog_banner_image} alt="blog-banner" className='w-full h-full opacity-20  lg:object-fill object-cover'/>
       <h2 className='absolute z-[10] text-2xl md:text-4xl text-primaryColor text-center p-4 text-balance'>{title}</h2>
     </div>
   )

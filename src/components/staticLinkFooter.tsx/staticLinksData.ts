@@ -1,4 +1,5 @@
 // import { FaYoutube } from "react-icons/fa";
+import { contact_no } from "@/lib/utils";
 import {  FaSquareInstagram, FaWhatsapp } from "react-icons/fa6";
 
 export const static_links = [
@@ -71,7 +72,7 @@ export const static_links = [
                         id: 3,
                         icon: FaWhatsapp,
                         title: "WhatsApp",
-                        link: "https://api.whatsapp.com/send?phone=919021028599&text="
+                        link: `https://api.whatsapp.com/send?phone=91${contact_no}&text=`
                     },
                 
                     // {
