@@ -52,7 +52,7 @@ export function HeroBanner() {
                   <h1 className="lg:text-5xl md:text-4xl text-3xl my-4 font-bold text-primaryColor pl-4 tracking-wider">
                     {banner.title}
                   </h1>
-                  <p className="text-slate-200  text-base md:text-lg leading-relaxed">
+                  <p className="text-slate-200  text-base md:text-lg leading-relaxed text-balance">
                     {banner.desc}
                   </p>
                   <Link href={banner.link}>
