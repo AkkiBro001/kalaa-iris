@@ -1,9 +1,9 @@
 import Image from "next/image";
 import SubTitle from "../subTitle/subTitle";
 import ProcessWrapper from "./processWrapper";
-import { FaLocationDot } from "react-icons/fa6";
-import { Button } from "../ui/button";
-import { BiSolidNavigation } from "react-icons/bi";
+// import { FaLocationDot } from "react-icons/fa6";
+// import { Button } from "../ui/button";
+// import { BiSolidNavigation } from "react-icons/bi";
 // import Flashcard from "../flashcard/flashcard";
 //255 170 0
 export default function VisitUs() {
