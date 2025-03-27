@@ -48,9 +48,9 @@ export const heroBanner  = [
         id: "05",
         desktopBG: "/hero-banners/04_banner.png",
         mobileBG: "/hero-banners/04_mobile_banner.png",
-        title: "Single Exlposion",
+        title: "Single Water Splash",
         desc: "An iris reborn in a splash of water — where the eye meets water, merging in a burst of liquid energy.",
-        link: "/gallery/explosion"
+        link: "/gallery/nature"
         
     },
   

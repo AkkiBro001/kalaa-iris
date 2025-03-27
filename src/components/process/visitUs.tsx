@@ -9,8 +9,8 @@ import { BiSolidNavigation } from "react-icons/bi";
 export default function VisitUs() {
   return (
     <ProcessWrapper>
-      <SubTitle text="01. How it works"/>
-      <section className="flex flex-wrap gap-12 lg:gap-20 justify-center relative items-center xl:ml-[100px] ml-0">
+      <SubTitle text="How it works"/>
+      <section className="flex flex-wrap gap-12 lg:gap-20 justify-center relative items-center xl:ml-[100px] ml-0 mt-14">
       {/* <Flashcard className="left-[10px] -top-[212px] -rotate-[15deg] hidden md:flex bg-green-900 border-green-950"/> */}
       
         <Image width={600} height={400} alt="pic" src="/visit-us/camera.png" className="w-[300px] h-auto"/>
@@ -18,8 +18,8 @@ export default function VisitUs() {
         <Image width={600} height={400} alt="pic" src="/visit-us/home-decore.png" className="w-[400px] h-auto"/>
       </section>
 
-      <div className="flex flex-col text-center relative mt-8 ">
-      {/* <Flashcard className="hidden md:flex bg-blue-900 border-blue-950 rotate-[15deg]"/> */}
+      {/* <div className="flex flex-col text-center relative mt-8 ">
+      
         <h3 className="text-xl xs:text-2xl my-4">Come by our location!</h3>
         <div className="flex flex-col items-center gap-5 text-base text-primaryColor">
             <div className="flex flex-col xs:flex-row items-center gap-3">
@@ -36,7 +36,7 @@ export default function VisitUs() {
               </Button>
             </a>
         </div>
-      </div>
+      </div> */}
 
     </ProcessWrapper>
   )

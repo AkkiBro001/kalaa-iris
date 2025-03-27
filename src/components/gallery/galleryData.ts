@@ -1,23 +1,34 @@
 export const gallery_banner_data = [
     {
         id: 'gallery-1',
-        img: { desktop: "/gallery/banners/couple-infinity_desktop.jpg", mobile: "/gallery/banners/couple-infinity_mobile.jpg" },
+        img: { desktop: "/gallery/banners/collusion_desktop.jpg", mobile: "/gallery/banners/collusion_mobile.jpg" },
         position: 1,
     },
     {
         id: 'gallery-2',
-        img: { desktop: "/gallery/banners/single-nebula-exploding-effect_desktop.jpg", mobile: "/gallery/banners/single-nebula-exploding-effect_mobile.jpg" },
+        img: { desktop: "/gallery/banners/couple-infinity_desktop.jpg", mobile: "/gallery/banners/couple-infinity_mobile.jpg" },
         position: 2,
     },
+    
     {
         id: 'gallery-3',
-        img: { desktop: "/gallery/banners/family-trio_desktop.jpg", mobile: "/gallery/banners/family-trio_mobile.jpg" },
-        position: 3,
+        img: { desktop: "/gallery/banners/couple-ying-yang_desktop.jpg", mobile: "/gallery/banners/couple-ying-yang_mobile.jpg" },
+        position: 4,
     },
     {
         id: 'gallery-4',
+        img: { desktop: "/gallery/banners/single-nebula-exploding-effect_desktop.jpg", mobile: "/gallery/banners/single-nebula-exploding-effect_mobile.jpg" },
+        position: 3,
+    },
+    {
+        id: 'gallery-5',
+        img: { desktop: "/gallery/banners/family-trio_desktop.jpg", mobile: "/gallery/banners/family-trio_mobile.jpg" },
+        position: 5,
+    },
+    {
+        id: 'gallery-6',
         img: { desktop: "/gallery/banners/single-explosion-scaled-effect_desktop.jpg", mobile: "/gallery/banners/single-explosion-scaled-effect_mobile.jpg" },
-        position: 4,
+        position: 6,
     }
 ]
 
@@ -107,6 +118,11 @@ export const category_details = [
                 short_code: "S_PAR_01",
                 img: `${img_base_url}particle/single-bubble-effect.jpg`
             },
+            {
+                name: "Single Wooden Effect",
+                short_code: "S_PAR_02",
+                img: `${img_base_url}particle/single-wood-effect.jpg`
+            },
             // {
             //     name: "Single Dust Effect",
             //     short_code: "S_PAR_02",
@@ -130,6 +146,18 @@ export const category_details = [
             name: "Couple Infinity Effect",
             short_code: "COU_02",
             img: `${img_base_url}couple/couple-infinity-effect.jpg`
+        },
+
+        {
+            name: "Couple Collusion Effect",
+            short_code: "COU_03",
+            img: `${img_base_url}couple/couple-collusion-effect.jpg`
+        },
+
+        {
+            name: "Couple Ying-Yang Effect",
+            short_code: "COU_04",
+            img: `${img_base_url}couple/couple-ying-yang.jpg`
         }
     ]
     },
@@ -145,8 +173,13 @@ export const category_details = [
                 img: `${img_base_url}family/Family-3.jpg`
             },
             {
-                name: "Family 5",
+                name: "Family 3 (Trio) Vertical",
                 short_code: "FAM_02",
+                img: `${img_base_url}family/Family-3-verticle.jpg`
+            },
+            {
+                name: "Family 5",
+                short_code: "FAM_03",
                 img: `${img_base_url}family/Family-5.jpg`
             },
     

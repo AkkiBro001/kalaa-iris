@@ -12,7 +12,7 @@ function MobileNav() {
   const is_welcome_screen = pathname === "/welcome"
   if(is_welcome_screen) return null
   return (
-    <ul className='gap-4 flex justify-around md:hidden sticky bottom-0 p-3 backdrop-blur-md mt-auto shadow-md border-t border-hairlineColor z-50'>
+    <ul className='gap-4 flex justify-around md:hidden sticky bottom-0 p-3 backdrop-blur-md bg-black/70 mt-auto shadow-md border-t border-hairlineColor z-50'>
         {
             navigation_links.map(link => {
                  const activeLink = (pathname.includes(link.link) && link.link.length > 1) || (pathname === link.link && link.link.length === 1)
